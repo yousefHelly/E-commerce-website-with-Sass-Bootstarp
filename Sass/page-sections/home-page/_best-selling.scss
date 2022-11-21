@@ -40,7 +40,7 @@ section.offers {
   .offer1,
   .offer2,
   .offer3 {
-    background-image: url(imgs/offer.jpg);
+    background-image: url("../imgs/offer.jpg");
     background-size: cover;
     height: 450px;
     background-position: 50%;
@@ -66,10 +66,10 @@ section.offers {
     }
   }
   .offer2 {
-    background-image: url(imgs/offer-2.jpg);
+    background-image: url("../imgs/offer-2.jpg");
   }
   .offer3 {
-    background-image: url(imgs/offer-3.jpg);
+    background-image: url("../imgs/offer-3.jpg");
   }
   .offer-text {
     position: relative;
