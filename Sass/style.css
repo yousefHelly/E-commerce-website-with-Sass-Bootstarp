@@ -432,7 +432,7 @@ header nav.navbar .others .user-info .user-nav.show {
 }
 
 section.landing {
-  background-image: url("/imgs/landing-2.jpg");
+  background-image: url("imgs/landing-2.jpg");
   background-position: 50% 30%;
   background-size: cover;
   height: 600px;
@@ -536,7 +536,7 @@ section.features .feature:last-child:hover svg {
 section.offers .offer1,
 section.offers .offer2,
 section.offers .offer3 {
-  background-image: url(/imgs/offer.jpg);
+  background-image: url(imgs/offer.jpg);
   background-size: cover;
   height: 450px;
   background-position: 50%;
@@ -590,11 +590,11 @@ section.offers .offer3:hover .offer-text::after {
 }
 
 section.offers .offer2 {
-  background-image: url(/imgs/offer-2.jpg);
+  background-image: url(imgs/offer-2.jpg);
 }
 
 section.offers .offer3 {
-  background-image: url(/imgs/offer-3.jpg);
+  background-image: url(imgs/offer-3.jpg);
 }
 
 section.offers .offer-text {
@@ -775,7 +775,7 @@ section.offers .offer-text::after {
 
 .discount .discount-form {
   position: relative;
-  background-image: url(/imgs/landing-2.jpg);
+  background-image: url(imgs/landing-2.jpg);
   background-size: cover;
   position: relative;
   height: 300px;
