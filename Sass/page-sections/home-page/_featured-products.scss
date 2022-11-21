@@ -1,0 +1,7 @@
+section.featured-products {
+  .row {
+    .product-card {
+      @extend %product-card;
+    }
+  }
+}

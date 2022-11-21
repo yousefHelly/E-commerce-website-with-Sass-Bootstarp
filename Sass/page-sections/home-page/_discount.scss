@@ -1,0 +1,52 @@
+.discount {
+  background-color: var(--sec-color);
+  position: relative;
+  .discount-form {
+    position: relative;
+    background-image: url(/imgs/landing-2.jpg);
+    background-size: cover;
+    position: relative;
+    height: 300px;
+    z-index: 1;
+    @include overlay(#35394b, 0.75);
+    .content {
+      position: relative;
+    }
+    .form {
+      input {
+        &:focus-visible {
+          outline: 0;
+        }
+      }
+      button {
+        border-radius: 0 !important;
+        font-size: 15px;
+      }
+    }
+  }
+  .our-partners {
+    .row {
+      img {
+        width: 100px;
+      }
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #f1f0f0;
+    width: 900px;
+    height: 700px;
+    z-index: -1;
+    left: 430px;
+    top: 320px;
+    @extend %center;
+    display: none;
+    @include breakpoint("large") {
+      display: block;
+    }
+    @include breakpoint("medium") {
+      display: block;
+    }
+  }
+}

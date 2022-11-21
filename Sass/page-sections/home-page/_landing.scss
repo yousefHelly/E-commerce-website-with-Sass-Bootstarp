@@ -1,0 +1,55 @@
+section.landing {
+  background-image: url("/imgs/landing-2.jpg");
+  background-position: 50% 30%;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  @include overlay(black, 0.5);
+  .container {
+    position: relative;
+    .landing-text {
+      h2 {
+        span {
+          letter-spacing: 5px;
+          font-size: 50px;
+          @include breakpoint("mobile") {
+            font-size: 30px;
+          }
+        }
+      }
+      button {
+        background: transparent;
+        color: var(--main-color);
+        border-left: 0;
+        border-radius: 0;
+        position: relative;
+        letter-spacing: 5px;
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          width: 1px;
+          background-color: var(--main-color);
+          transition: 0.3s;
+        }
+        &::before {
+          left: 0;
+          height: 12px;
+          top: 0;
+        }
+        &::after {
+          left: 0;
+          height: 12px;
+          bottom: 0;
+        }
+        &:hover::before,
+        &:hover::after {
+          height: 20px;
+        }
+      }
+      @include breakpoint("mobile") {
+        width: 100% !important;
+      }
+    }
+  }
+}

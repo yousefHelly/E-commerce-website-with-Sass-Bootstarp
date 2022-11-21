@@ -1,0 +1,177 @@
+::selection {
+  background-color: var(--main-color);
+  color: black;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+header {
+  .header-social {
+    .links {
+      @extend %social-links;
+    }
+  }
+  nav.navbar {
+    .navbar-toggler {
+      &:focus {
+        box-shadow: none;
+        color: var(--main-color);
+      }
+    }
+    #collapsibleNavId {
+      justify-content: space-between;
+      ul.navbar-nav {
+        @include breakpoint("large") {
+          margin-left: 7rem;
+        }
+        li.active a {
+          color: var(--main-color);
+          cursor: initial;
+          &:hover {
+            color: var(--main-color);
+          }
+        }
+        li:not(.active) {
+          cursor: pointer;
+          @extend %fill-left;
+          &::before {
+            border-radius: 0;
+          }
+        }
+      }
+    }
+    .others {
+      .shopping-cart,
+      .search-bar {
+        position: relative;
+        svg {
+          transition: 0.3s;
+          cursor: pointer;
+          font-size: 20px;
+          &:hover {
+            color: var(--main-color);
+          }
+        }
+      }
+      .card-items {
+        @extend %popup;
+        display: none !important;
+        bottom: -250px;
+        width: 300px;
+        height: 250px;
+        right: -135px;
+        z-index: 50;
+        svg {
+          font-size: 50px;
+        }
+        &.show {
+          display: flex !important;
+        }
+      }
+      .search-form {
+        @extend %popup;
+        display: none !important;
+        bottom: -105px;
+        width: 300px;
+        height: 100px;
+        right: -75px;
+        z-index: 50;
+        input[type="search"] {
+          padding: 10px 5px;
+          border: 0;
+          background-color: #3cb87840;
+          &:focus-visible {
+            outline: 0;
+          }
+        }
+        button {
+          border-radius: initial;
+          padding: 9px;
+        }
+        &.show {
+          display: flex !important;
+        }
+        &::before {
+          right: 80px;
+        }
+      }
+      .user-info {
+        position: relative;
+        .min-info {
+          cursor: pointer;
+          position: relative;
+          @extend %fill-left;
+          .img {
+            overflow: hidden;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            img {
+              object-fit: cover;
+            }
+          }
+          p {
+            font-size: 14px;
+          }
+          svg {
+            transition: 0.3s;
+          }
+        }
+        .user-nav {
+          position: absolute;
+          background-color: white;
+          color: black;
+          bottom: -210px;
+          width: 275px;
+          height: 200px;
+          right: 0px;
+          z-index: 50;
+          display: none;
+          ul {
+            margin: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 1rem;
+            li {
+              cursor: pointer;
+              &:hover {
+                color: var(--main-color);
+              }
+            }
+          }
+          .Dark-mode-switcher {
+            cursor: pointer;
+            @extend %switcher;
+            left: 65px;
+            &.toggle::after {
+              left: 25px;
+            }
+            &.toggle {
+              background-color: var(--main-color) !important;
+            }
+          }
+          @extend %popup;
+          &::before {
+            left: 215px;
+            right: 50px;
+          }
+          &.show {
+            display: block;
+          }
+        }
+      }
+      @media (max-width: 575px) {
+        justify-content: flex-end;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@mixin overlay($color, $alpha) {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color, $alpha);
+  }
+}
+@mixin breakpoint($point) {
+  @if $point == "mobile" {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $point == "small" {
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $point == "medium" {
+    @media (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $point == "large" {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $point == "under-large" {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  } @else if $point == "under-medium" {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+}
+
+@mixin flex($dir: row, $jus: center, $ali: center, $gap: none) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $jus;
+  align-items: $ali;
+  gap: $gap;
+}
+
+@mixin grid($cols) {
+  @if $cols == 3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  } @else if $cols == 4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  } @else if $cols == 5 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  } @else if $cols == 6 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  }
+}

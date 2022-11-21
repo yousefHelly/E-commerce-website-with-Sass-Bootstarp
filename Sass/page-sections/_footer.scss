@@ -1,0 +1,28 @@
+footer {
+  .footer-social {
+    .links {
+      justify-content: space-around;
+      @extend %social-links;
+    }
+  }
+  .footer-nav {
+    .list-unstyled {
+      a {
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+        &:hover {
+          color: var(--main-color);
+        }
+      }
+    }
+  }
+  .copy-rights {
+    p {
+      @include breakpoint("mobile") {
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+  }
+}

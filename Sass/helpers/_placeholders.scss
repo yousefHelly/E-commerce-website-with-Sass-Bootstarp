@@ -1,0 +1,164 @@
+%center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+%centerX {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+%centerY {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+%social-links {
+  .facebook {
+    transition: 0.3s;
+    &:hover {
+      color: #1877f2;
+    }
+  }
+  .twitter {
+    transition: 0.3s;
+    &:hover {
+      color: #1da1f2;
+    }
+  }
+  .instagram {
+    transition: 0.3s;
+    &:hover {
+      color: #405de6;
+    }
+  }
+  .github {
+    transition: 0.3s;
+    &:hover {
+      color: #4078c0;
+    }
+  }
+  .linkedin {
+    transition: 0.3s;
+    &:hover {
+      color: #0077b5;
+    }
+  }
+}
+%fill-left {
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    transition: 0.3s;
+    background-color: #3cb8784a;
+    z-index: -1;
+    border-radius: 50px;
+  }
+  &:hover::before {
+    width: 100%;
+  }
+}
+
+%popup {
+  position: absolute;
+  background-color: white;
+  border-radius: 15px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    border: 10px solid;
+    border: {
+      top-color: transparent;
+      right-color: transparent;
+      bottom-color: #ededed;
+      left-color: transparent;
+    }
+    z-index: 50;
+  }
+}
+%product-card {
+  max-height: 450px;
+  margin-bottom: 3rem;
+  .product-price {
+    color: var(--main-color);
+    &::before {
+      content: "$";
+    }
+    &::after {
+      content: ".00";
+    }
+  }
+  .product-rating {
+    svg {
+      color: #ff9600;
+    }
+  }
+  cursor: pointer;
+  .product-img {
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    img {
+      height: 350px;
+      transition: 0.3s;
+    }
+    .product-buttons {
+      position: absolute;
+      right: -35px;
+      top: 10px;
+      transition: 0.3s;
+      > div {
+        background-color: var(--main-color);
+        color: white;
+        margin-bottom: 10px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(var(--main-color), 0.75);
+        }
+      }
+    }
+    &:hover .product-buttons {
+      right: 10px;
+    }
+    &:hover {
+      @include overlay(black, 0.25);
+    }
+  }
+  .product-name {
+    transition: 0.3s;
+    &:hover {
+      color: var(--main-color);
+    }
+  }
+}
+
+%switcher {
+  position: relative;
+  width: 50px;
+  height: 25px;
+  background-color: var(--main-color);
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 0.3s;
+  }
+}
