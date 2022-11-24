@@ -1,0 +1,158 @@
+.accordion-button {
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+section.dashboard {
+  nav.dashboard-nav {
+    min-height: 275px;
+    h2.active {
+      background-color: var(--main-hv-color);
+    }
+    .products-list {
+      a.active {
+        color: var(--main-color) !important;
+      }
+      li:not(.active) a {
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          color: black !important;
+        }
+      }
+    }
+  }
+  .products-content {
+    .product-search {
+      .filters {
+        div {
+          cursor: pointer;
+          &:hover {
+            background-color: var(--main-hv-color) !important;
+          }
+        }
+      }
+    }
+    .products-grid {
+      .product-card {
+        @extend %product-card;
+        .modify {
+          .edit {
+            &:hover {
+              background-color: var(--main-hv-color) !important;
+            }
+          }
+          .del {
+            &:hover {
+              background-color: var(--main-hv-color) !important;
+            }
+          }
+        }
+      }
+    }
+    .pages {
+      @extend %page-switcher;
+    }
+    .imgs-holder {
+      .img {
+        transition: 0.3s;
+        position: relative;
+        width: 175px;
+        height: 175px;
+        img {
+          object-fit: cover;
+        }
+        .expand,
+        .del {
+          position: absolute;
+          bottom: 15px;
+          left: 35px;
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+          display: none !important;
+        }
+        .del {
+          left: initial;
+          right: 35px;
+        }
+        &:hover {
+          @include overlay(black, 0.25);
+          .expand,
+          .del {
+            display: flex !important;
+          }
+        }
+      }
+      .img-upload {
+        label {
+          transition: 0.3s;
+          svg {
+            transition: 0.3s;
+          }
+          cursor: pointer;
+        }
+        &:hover {
+          background-color: var(--main-color) !important;
+          label {
+            color: white !important;
+            svg {
+              color: white !important;
+            }
+          }
+        }
+      }
+    }
+    .product-tags {
+      span {
+        position: relative;
+        cursor: pointer;
+        transition: 0.3s;
+        background-color: #f4f4f4;
+        &:hover {
+          background-color: var(--main-hv-color) !important;
+        }
+        &::after {
+          content: "\f410";
+          font-family: "font awesome 5 free";
+          font-weight: 900;
+          position: absolute;
+          right: 10px;
+          color: rgba($color: black, $alpha: 0.5);
+        }
+      }
+      .addTag {
+        &:focus-visible {
+          outline: 0;
+        }
+      }
+    }
+  }
+}
+.expanded-img {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-hv-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  flex-direction: column;
+  gap: 1rem;
+  display: none;
+  img {
+    max-width: 350px;
+  }
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}

@@ -1,5 +1,6 @@
 :root {
   --main-color: #3cb878;
+  --main-hv-color: #3cb8784a;
   --sec-color: #f5f6f9;
 }
 
@@ -97,29 +98,29 @@ header nav.navbar .others .card-items::before, header nav.navbar .others .search
   z-index: 50;
 }
 
-section.best-selling .row .product-card, section.featured-products .row .product-card {
+section.best-selling .row .product-card, section.featured-products .row .product-card, section.dashboard .products-content .products-grid .product-card {
   max-height: 450px;
   margin-bottom: 3rem;
   cursor: pointer;
 }
 
-section.best-selling .row .product-card .product-price, section.featured-products .row .product-card .product-price {
+section.best-selling .row .product-card .product-price, section.featured-products .row .product-card .product-price, section.dashboard .products-content .products-grid .product-card .product-price {
   color: var(--main-color);
 }
 
-section.best-selling .row .product-card .product-price::before, section.featured-products .row .product-card .product-price::before {
+section.best-selling .row .product-card .product-price::before, section.featured-products .row .product-card .product-price::before, section.dashboard .products-content .products-grid .product-card .product-price::before {
   content: "$";
 }
 
-section.best-selling .row .product-card .product-price::after, section.featured-products .row .product-card .product-price::after {
+section.best-selling .row .product-card .product-price::after, section.featured-products .row .product-card .product-price::after, section.dashboard .products-content .products-grid .product-card .product-price::after {
   content: ".00";
 }
 
-section.best-selling .row .product-card .product-rating svg, section.featured-products .row .product-card .product-rating svg {
+section.best-selling .row .product-card .product-rating svg, section.featured-products .row .product-card .product-rating svg, section.dashboard .products-content .products-grid .product-card .product-rating svg {
   color: #ff9600;
 }
 
-section.best-selling .row .product-card .product-img, section.featured-products .row .product-card .product-img {
+section.best-selling .row .product-card .product-img, section.featured-products .row .product-card .product-img, section.dashboard .products-content .products-grid .product-card .product-img {
   position: relative;
   overflow: hidden;
   -webkit-transition: 0.3s;
@@ -127,13 +128,13 @@ section.best-selling .row .product-card .product-img, section.featured-products 
   cursor: pointer;
 }
 
-section.best-selling .row .product-card .product-img img, section.featured-products .row .product-card .product-img img {
+section.best-selling .row .product-card .product-img img, section.featured-products .row .product-card .product-img img, section.dashboard .products-content .products-grid .product-card .product-img img {
   height: 350px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-section.best-selling .row .product-card .product-img .product-buttons, section.featured-products .row .product-card .product-img .product-buttons {
+section.best-selling .row .product-card .product-img .product-buttons, section.featured-products .row .product-card .product-img .product-buttons, section.dashboard .products-content .products-grid .product-card .product-img .product-buttons {
   position: absolute;
   right: -35px;
   top: 10px;
@@ -141,7 +142,7 @@ section.best-selling .row .product-card .product-img .product-buttons, section.f
   transition: 0.3s;
 }
 
-section.best-selling .row .product-card .product-img .product-buttons > div, section.featured-products .row .product-card .product-img .product-buttons > div {
+section.best-selling .row .product-card .product-img .product-buttons > div, section.featured-products .row .product-card .product-img .product-buttons > div, section.dashboard .products-content .products-grid .product-card .product-img .product-buttons > div {
   background-color: var(--main-color);
   color: white;
   margin-bottom: 10px;
@@ -160,15 +161,15 @@ section.best-selling .row .product-card .product-img .product-buttons > div, sec
   cursor: pointer;
 }
 
-section.best-selling .row .product-card .product-img .product-buttons > div:hover, section.featured-products .row .product-card .product-img .product-buttons > div:hover {
+section.best-selling .row .product-card .product-img .product-buttons > div:hover, section.featured-products .row .product-card .product-img .product-buttons > div:hover, section.dashboard .products-content .products-grid .product-card .product-img .product-buttons > div:hover {
   background-color: rgba(var(--main-color), 0.75);
 }
 
-section.best-selling .row .product-card .product-img:hover .product-buttons, section.featured-products .row .product-card .product-img:hover .product-buttons {
+section.best-selling .row .product-card .product-img:hover .product-buttons, section.featured-products .row .product-card .product-img:hover .product-buttons, section.dashboard .products-content .products-grid .product-card .product-img:hover .product-buttons {
   right: 10px;
 }
 
-section.best-selling .row .product-card .product-img:hover::before, section.featured-products .row .product-card .product-img:hover::before {
+section.best-selling .row .product-card .product-img:hover::before, section.featured-products .row .product-card .product-img:hover::before, section.dashboard .products-content .products-grid .product-card .product-img:hover::before {
   content: "";
   position: absolute;
   left: 0;
@@ -178,12 +179,12 @@ section.best-selling .row .product-card .product-img:hover::before, section.feat
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-section.best-selling .row .product-card .product-name, section.featured-products .row .product-card .product-name {
+section.best-selling .row .product-card .product-name, section.featured-products .row .product-card .product-name, section.dashboard .products-content .products-grid .product-card .product-name {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-section.best-selling .row .product-card .product-name:hover, section.featured-products .row .product-card .product-name:hover {
+section.best-selling .row .product-card .product-name:hover, section.featured-products .row .product-card .product-name:hover, section.dashboard .products-content .products-grid .product-card .product-name:hover {
   color: var(--main-color);
 }
 
@@ -204,6 +205,32 @@ header nav.navbar .others .user-info .user-nav .Dark-mode-switcher::after {
   background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+section.dashboard .products-content .pages span:not(.active) {
+  cursor: pointer;
+}
+
+section.dashboard .products-content .pages span:not(.active):hover {
+  background-color: var(--main-hv-color) !important;
+}
+
+section.dashboard .products-content .pages .prev-btn {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+section.dashboard .products-content .pages .prev-btn:hover {
+  background-color: var(--main-hv-color) !important;
+}
+
+section.dashboard .products-content .pages .next-btn {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+section.dashboard .products-content .pages .next-btn:hover {
+  background-color: var(--main-hv-color) !important;
 }
 
 ::-moz-selection {
@@ -854,5 +881,183 @@ footer .footer-nav .list-unstyled a:hover {
     font-size: 13px;
     text-align: center;
   }
+}
+
+.accordion-button:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+section.dashboard nav.dashboard-nav {
+  min-height: 275px;
+}
+
+section.dashboard nav.dashboard-nav h2.active {
+  background-color: var(--main-hv-color);
+}
+
+section.dashboard nav.dashboard-nav .products-list a.active {
+  color: var(--main-color) !important;
+}
+
+section.dashboard nav.dashboard-nav .products-list li:not(.active) a {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section.dashboard nav.dashboard-nav .products-list li:not(.active) a:hover {
+  color: black !important;
+}
+
+section.dashboard .products-content .product-search .filters div {
+  cursor: pointer;
+}
+
+section.dashboard .products-content .product-search .filters div:hover {
+  background-color: var(--main-hv-color) !important;
+}
+
+section.dashboard .products-content .products-grid .product-card .modify .edit:hover {
+  background-color: var(--main-hv-color) !important;
+}
+
+section.dashboard .products-content .products-grid .product-card .modify .del:hover {
+  background-color: var(--main-hv-color) !important;
+}
+
+section.dashboard .products-content .imgs-holder .img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  width: 175px;
+  height: 175px;
+}
+
+section.dashboard .products-content .imgs-holder .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.dashboard .products-content .imgs-holder .img .expand,
+section.dashboard .products-content .imgs-holder .img .del {
+  position: absolute;
+  bottom: 15px;
+  left: 35px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: none !important;
+}
+
+section.dashboard .products-content .imgs-holder .img .del {
+  left: initial;
+  right: 35px;
+}
+
+section.dashboard .products-content .imgs-holder .img:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+section.dashboard .products-content .imgs-holder .img:hover .expand,
+section.dashboard .products-content .imgs-holder .img:hover .del {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+section.dashboard .products-content .imgs-holder .img-upload label {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+section.dashboard .products-content .imgs-holder .img-upload label svg {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section.dashboard .products-content .imgs-holder .img-upload:hover {
+  background-color: var(--main-color) !important;
+}
+
+section.dashboard .products-content .imgs-holder .img-upload:hover label {
+  color: white !important;
+}
+
+section.dashboard .products-content .imgs-holder .img-upload:hover label svg {
+  color: white !important;
+}
+
+section.dashboard .products-content .product-tags span {
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #f4f4f4;
+}
+
+section.dashboard .products-content .product-tags span:hover {
+  background-color: var(--main-hv-color) !important;
+}
+
+section.dashboard .products-content .product-tags span::after {
+  content: "\f410";
+  font-family: "font awesome 5 free";
+  font-weight: 900;
+  position: absolute;
+  right: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+section.dashboard .products-content .product-tags .addTag:focus-visible {
+  outline: 0;
+}
+
+.expanded-img {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-hv-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  display: none;
+}
+
+.expanded-img img {
+  max-width: 350px;
+}
+
+.expanded-img .close {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  font-size: 2rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

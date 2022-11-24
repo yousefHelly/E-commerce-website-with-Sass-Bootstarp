@@ -162,3 +162,25 @@
     transition: 0.3s;
   }
 }
+%page-switcher {
+  span:not(.active) {
+    cursor: pointer;
+    &:hover {
+      background-color: var(--main-hv-color) !important;
+    }
+  }
+  .prev-btn {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    &:hover {
+      background-color: var(--main-hv-color) !important;
+    }
+  }
+  .next-btn {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    &:hover {
+      background-color: var(--main-hv-color) !important;
+    }
+  }
+}

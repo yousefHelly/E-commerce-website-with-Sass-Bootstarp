@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sass/all.min.css">
+    <link rel="stylesheet" href="Sass/scss/bootstrap.css">
+    <link rel="stylesheet" href="Sass/style.css">
+    <title>RenoshopBee | Products</title>
+</head>
+
+<body>
+    <!--Start Header-->
+    <header class="bg-black text-white">
+        <!--Social media && contacts Info-->
+        <div class="header-social d-flex flex-column flex-md-row  container-fluid  align-items-center">
+            <div class="info d-none d-sm-flex py-2 gap-5">
+                <div class="phone d-flex align-items-center">
+                    <i class="fas fa-phone"></i>
+                    <span class="phone number ms-3">+1 123 456 789</span>
+                </div>
+                <div class="mail d-flex align-items-center ps-4 border-start">
+                    <i class="far fa-envelope"></i>
+                    <span class="email address ms-3">info@company.com</span>
+                </div>
+            </div>
+            <div class="links d-flex gap-4 align-items-center ms-md-auto ">
+                <a class="text-white" href=""><i class="fab fa-facebook-f facebook"></i></a>
+                <a class="text-white" href=""><i class="fab fab fa-twitter twitter"></i></a>
+                <a class="text-white" href=""><i class="fab fab fa-instagram instagram"></i></a>
+                <a class="text-white" href=""><i class="fab fab fa-linkedin-in linkedin"></i></a>
+                <a class="text-white" href=""><i class="fab fa-github github"></i></a>
+            </div>
+        </div>
+        <!--Social media && contacts Info-->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container-fluid flex-sm-column flex-xl-row">
+                <a class="navbar-brand text-uppercase" href="#"><span
+                        class="text-primary fw-bold">RenoShop</span>Bee</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-column flex-md-row" id="collapsibleNavId">
+                    <ul class="navbar-nav  mt-2 mt-lg-0 order-2 order-md-1">
+                        <li class="nav-item py-3 px-2 px-lg-3">
+                            <a class="nav-link text-uppercase fw-bold" href="#" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item py-3 px-2 px-lg-3">
+                            <a class="nav-link text-uppercase fw-bold" href="#">Women</a>
+                        </li>
+                        <li class="nav-item py-3 px-2 px-lg-3">
+                            <a class="nav-link text-uppercase fw-bold" href="#">Men</a>
+                        </li>
+                        <li class="nav-item py-3 px-2 px-lg-3">
+                            <a class="nav-link text-uppercase fw-bold" href="#">Kids</a>
+                        </li>
+                        <li class="nav-item py-3 px-2 px-lg-3">
+                            <a class="nav-link text-uppercase fw-bold" href="#">Jewellery</a>
+                        </li>
+                        <li class="nav-item py-3 px-2 px-lg-3">
+                            <a class="nav-link text-uppercase fw-bold" href="#">Accssories</a>
+                        </li>
+                    </ul>
+                    <div class="others d-flex gap-3 order-1">
+                        <div class="shopping-cart text-black d-flex align-items-center px-2">
+                            <i class="fas fa-shopping-cart button"></i>
+                            <div class="card-items d-flex align-items-center justify-content-center flex-column">
+                                <i class="fas fa-exclamation text-primary p-5 pb-2"></i>
+                                <p class="text-capitalize pb-5">your cart is empty</p>
+                                <button class="close btn btn-primary text-white">Continue Shopping</button>
+                            </div>
+                        </div>
+                        <div class="search-bar text-black d-flex align-items-center px-2">
+                            <i class="fas fa-search"></i>
+                            <div class="search-form d-flex align-items-center justify-content-center">
+                                <input type="search" placeholder="Search">
+                                <button class="btn btn-primary text-white">Search</button>
+                            </div>
+                        </div>
+                        <div class="user-info">
+                            <div
+                                class="min-info d-flex align-items-center justify-content-center gap-2  p-2 rounded-pill">
+                                <div class="img img-fluid">
+                                    <img class="img-fluid" src="imgs/skills-05.png" alt="" srcset="">
+                                </div>
+                                <p class="text-black-50 m-0 text-center d-none d-xl-block">Welcome Back <br><span
+                                        class="userName">Admin</span> !</p>
+                                <i class="fas fa-chevron-down text-black-50"></i>
+                            </div>
+                            <div class="user-nav">
+                                <ul class="list-unstyled">
+                                    <li class="p-2 my-2 border-bottom d-flex align-items-center gap-2">
+                                        <i class="far fa-user-circle text-primary"></i>
+                                        View Profile
+                                    </li>
+                                    <li class="p-2 my-2 border-bottom d-flex align-items-center gap-2">
+                                        <i class="fas fa-edit text-primary"></i>
+                                        Edit Settings
+                                    </li>
+                                    <li class="p-2 my-2 d-flex align-items-center gap-2">
+                                        <i class="fas fa-moon text-primary"></i>
+                                        Dark Mode
+                                        <div class="Dark-mode-switcher rounded-pill bg-danger"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--End Header-->
+    <!--Start Dashboard-->
+    <section class="dashboard row m-0">
+        <nav class="dashboard-nav bg-light col-lg-2 container-fluid p-0">
+            <ul class="list-unstyled d-flex justify-content-center align-items-flex-start flex-column">
+                <li class="px-3 my-1 mx-2 py-2 d-flex align-items-center rounded-1">
+                    <i class="far fa-chart-bar me-3"></i>
+                    Dashboard
+                </li>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header active d-flex align-items-center rounded-1" id="headingOne">
+                            <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <svg class="svg-inline--fa fa-bag-shopping me-3" aria-hidden="true" focusable="false"
+                                    data-prefix="fas" data-icon="bag-shopping" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                        d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 96c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24zm200-24c0 13.3-10.7 24-24 24s-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24z">
+                                    </path>
+                                </svg><!-- <i class="fas fa-shopping-bag me-3"></i> Font Awesome fontawesome.com -->
+                                Products
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body p-0">
+
+                                <ul class="products-list list-unstyled text-black-50 bg-light px-3">
+                                    <li class="py-2 ps-2 active"><a class="text-decoration-none active text-black-50"
+                                            href="#">View
+                                            products</a></li>
+                                    <li class="py-2 ps-2"><a class="text-decoration-none text-black-50"
+                                            href="admin-add-product.html">Add/Edit
+                                            products</a></li>
+                                    <li class="py-2 ps-2"><a class="text-decoration-none text-black-50"
+                                            href="#">Categories</a></li>
+                                    <li class="py-2 ps-2"><a class="text-decoration-none text-black-50"
+                                            href="#">Brands</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <div class="products-content col-lg-10">
+            <div
+                class="header-content d-flex align-items-center justify-content-between p-5 pb-0 flex-column flex-md-row gap-3 gap-lg-0">
+                <h3>Product grid</h3>
+                <button class="btn btn-primary text-white" onclick="openAddPage()">
+                    <i class="fas fa-plus"></i>
+                    Create new
+                </button>
+            </div>
+            <div class="grid-content m-2 m-lg-5 py-2 bg-light rounded">
+                <div
+                    class="product-search d-flex justify-content-between align-items-center border-bottom flex-column flex-lg-row">
+                    <input type="search" placeholder="Search"
+                        class="bg-light p-2 rounded border col-10 col-lg-6 mx-3 mt-3 mb-4">
+                    <div class="filters d-flex gap-2 me-3 mt-3 mb-4">
+                        <div class="text-capitalize category py-2 px-3 border rounded">
+                            category
+                            <i class="fas fa-chevron-down text-black-50 arrow ms-2"></i>
+                        </div>
+                        <div class="text-capitalize py-2 px-3 border rounded">
+                            Last added
+                            <i class="fas fa-sort ms-2"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-grid row pt-4">
+                    <div class="product-card col-md-6 col-lg-4 col-xl-3">
+                        <div class="product-img">
+                            <img class="img-fluid" src="imgs/product.png" alt="product">
+                            <div class="product-buttons">
+                                <div class="add-to-cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="add-to-wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="return-product">
+                                    <i class="fas fa-retweet"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-name text-capitalize pt-2">
+                            Voyage Yoga Bag
+                        </div>
+                        <div class="product-price mb-2">250</div>
+                        <div class="modify d-flex justify-content-around">
+                            <div class="edit py-2 px-3 border rounded" onclick="openAddPage()">
+                                <i class="fas fa-pen text-black-50 me-2"></i>
+                                Edit
+                            </div>
+                            <div class="del text-danger py-2 px-3 border rounded" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fas fa-trash me-2"></i>
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-6 col-lg-4 col-xl-3">
+                        <div class="product-img">
+                            <img class="img-fluid" src="imgs/product.png" alt="product">
+                            <div class="product-buttons">
+                                <div class="add-to-cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="add-to-wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="return-product">
+                                    <i class="fas fa-retweet"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-name text-capitalize pt-2">
+                            Voyage Yoga Bag
+                        </div>
+                        <div class="product-price mb-2">250</div>
+                        <div class="modify d-flex justify-content-around">
+                            <div class="edit py-2 px-3 border rounded" onclick="openAddPage()">
+                                <i class="fas fa-pen text-black-50 me-2"></i>
+                                Edit
+                            </div>
+                            <div class="del text-danger py-2 px-3 border rounded" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fas fa-trash me-2"></i>
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-6 col-lg-4 col-xl-3">
+                        <div class="product-img">
+                            <img class="img-fluid" src="imgs/product.png" alt="product">
+                            <div class="product-buttons">
+                                <div class="add-to-cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="add-to-wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="return-product">
+                                    <i class="fas fa-retweet"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-name text-capitalize pt-2">
+                            Voyage Yoga Bag
+                        </div>
+                        <div class="product-price mb-2">250</div>
+                        <div class="modify d-flex justify-content-around">
+                            <div class="edit py-2 px-3 border rounded" onclick="openAddPage()">
+                                <i class="fas fa-pen text-black-50 me-2"></i>
+                                Edit
+                            </div>
+                            <div class="del text-danger py-2 px-3 border rounded" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fas fa-trash me-2"></i>
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-6 col-lg-4 col-xl-3">
+                        <div class="product-img">
+                            <img class="img-fluid" src="imgs/product.png" alt="product">
+                            <div class="product-buttons">
+                                <div class="add-to-cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="add-to-wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="return-product">
+                                    <i class="fas fa-retweet"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-name text-capitalize pt-2">
+                            Voyage Yoga Bag
+                        </div>
+                        <div class="product-price mb-2">250</div>
+                        <div class="modify d-flex justify-content-around">
+                            <div class="edit py-2 px-3 border rounded" onclick="openAddPage()">
+                                <i class="fas fa-pen text-black-50 me-2"></i>
+                                Edit
+                            </div>
+                            <div class="del text-danger py-2 px-3 border rounded" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fas fa-trash me-2"></i>
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-6 col-lg-4 col-xl-3">
+                        <div class="product-img">
+                            <img class="img-fluid" src="imgs/product.png" alt="product">
+                            <div class="product-buttons">
+                                <div class="add-to-cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="add-to-wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="return-product">
+                                    <i class="fas fa-retweet"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-name text-capitalize pt-2">
+                            Voyage Yoga Bag
+                        </div>
+                        <div class="product-price mb-2">250</div>
+                        <div class="modify d-flex justify-content-around">
+                            <div class="edit py-2 px-3 border rounded" onclick="openAddPage()">
+                                <i class="fas fa-pen text-black-50 me-2"></i>
+                                Edit
+                            </div>
+                            <div class="del text-danger py-2 px-3 border rounded" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fas fa-trash me-2"></i>
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-6 col-lg-4 col-xl-3">
+                        <div class="product-img">
+                            <img class="img-fluid" src="imgs/product.png" alt="product">
+                            <div class="product-buttons">
+                                <div class="add-to-cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="add-to-wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="return-product">
+                                    <i class="fas fa-retweet"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-name text-capitalize pt-2">
+                            Voyage Yoga Bag
+                        </div>
+                        <div class="product-price mb-2">250</div>
+                        <div class="modify d-flex justify-content-around">
+                            <div class="edit py-2 px-3 border rounded" onclick="openAddPage()">
+                                <i class="fas fa-pen text-black-50 me-2"></i>
+                                Edit
+                            </div>
+                            <div class="del text-danger py-2 px-3 border rounded" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fas fa-trash me-2"></i>
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-6 col-lg-4 col-xl-3">
+                        <div class="product-img">
+                            <img class="img-fluid" src="imgs/product.png" alt="product">
+                            <div class="product-buttons">
+                                <div class="add-to-cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="add-to-wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="return-product">
+                                    <i class="fas fa-retweet"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-name text-capitalize pt-2">
+                            Voyage Yoga Bag
+                        </div>
+                        <div class="product-price mb-2">250</div>
+                        <div class="modify d-flex justify-content-around">
+                            <div class="edit py-2 px-3 border rounded" onclick="openAddPage()">
+                                <i class="fas fa-pen text-black-50 me-2"></i>
+                                Edit
+                            </div>
+                            <div class="del text-danger py-2 px-3 border rounded" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fas fa-trash me-2"></i>
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card col-md-6 col-lg-4 col-xl-3">
+                        <div class="product-img">
+                            <img class="img-fluid" src="imgs/product.png" alt="product">
+                            <div class="product-buttons">
+                                <div class="add-to-cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="add-to-wishlist">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="return-product">
+                                    <i class="fas fa-retweet"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-name text-capitalize pt-2">
+                            Voyage Yoga Bag
+                        </div>
+                        <div class="product-price mb-2">250</div>
+                        <div class="modify d-flex justify-content-around">
+                            <div class="edit py-2 px-3 border rounded" onclick="openAddPage()">
+                                <i class="fas fa-pen text-black-50 me-2"></i>
+                                Edit
+                            </div>
+                            <div class="del text-danger py-2 px-3 border rounded" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fas fa-trash me-2"></i>
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Delete a Product</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-black-50">You are going to Delete <span class="deletedEl">element</span> from
+                                products</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-danger del" data-bs-dismiss="modal">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pages mx-5 my-5 d-flex justify-content-center">
+                <button class="prev-btn rounded border bg-light px-3">
+                    Previous
+                </button>
+                <span class="py-2 active px-3 bg-primary text-white border">1</span>
+                <span class="py-2 px-3 bg-light border">2</span>
+                <span class="py-2 px-3 bg-light border">3</span>
+                <button class="next-btn rounded border bg-light px-3">
+                    Next
+                </button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--End Dashboard-->
+    <!--Start Footer-->
+    <footer class="">
+        <div class="container footer-social row align-items-center justify-content-center mx-auto">
+            <p class="col-md-6 col-lg-9 py-3 m-0 border-bottom border-md-0 text-center text-md-start">we are confident
+                we have provided all the
+                best for you. Stay connect with
+                us</p>
+            <div class="links col-md-6 col-lg-3 d-flex gap-4 align-items-center py-3 
+            border-start border-end">
+                <a class="text-secondary" href=""><i class="fab fa-facebook-f facebook"></i></a>
+                <a class="text-secondary" href=""><i class="fab fab fa-twitter twitter"></i></a>
+                <a class="text-secondary" href=""><i class="fab fab fa-instagram instagram"></i></a>
+                <a class="text-secondary" href=""><i class="fab fab fa-linkedin-in linkedin"></i></a>
+                <a class="text-secondary" href=""><i class="fab fa-github github"></i></a>
+            </div>
+        </div>
+        <div class="footer-nav border-top m-0 pb-5 pt-3">
+            <div class="container row mx-auto">
+                <div class="info col-md-6 col-lg-3">
+                    <h4 class="header text-uppercase pt-5 pb-3">Information</h4>
+                    <ul class="list-unstyled">
+                        <a href="">
+                            <li class="py-2">Delivery Information</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">Discount</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">Sitemap</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">Privacy Policy</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">My Account</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="my-account col-md-6 col-lg-3">
+                    <h4 class="header text-uppercase pt-5 pb-3">My Account</h4>
+                    <ul class="list-unstyled">
+                        <a href="">
+                            <li class="py-2">Sign In</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">View Cart</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">My Wishlist</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">Check Out</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">Track My Order</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="help col-md-6 col-lg-3">
+                    <h4 class="header text-uppercase pt-5 pb-3">Help</h4>
+                    <ul class="list-unstyled">
+                        <a href="">
+                            <li class="py-2">F.A.Q</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">Shipping</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">Contact Us</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">Privacy Policy</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="contact col-md-6 col-lg-3">
+                    <h4 class="header text-uppercase pt-5 pb-3">Contact Info</h4>
+                    <ul class="list-unstyled">
+                        <a class="d-flex align-items-center gap-2" href="">
+                            <i class="fas fa-globe-africa"></i>
+                            <li class="py-2">1234 Giza,Egypt</li>
+                        </a>
+                        <a class="d-flex align-items-center gap-2" href="">
+                            <i class="fas fa-phone"></i>
+                            <li class="py-2">+1 234 5678 9999</li>
+                        </a>
+                        <a class="d-flex align-items-center gap-2" href="mailto:yousef.helly@gmail.com">
+                            <i class="far fa-envelope"></i>
+                            <li class="py-2 text-primary">yousef.helly@gmail.com</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy-rights bg-black">
+            <p class="container mx-auto text-white-50 m-0 py-3 px-0">&copy;copyright 2022 RenoshopBee all right
+                reserved -
+                Design By
+                RenoshopBee</p>
+        </div>
+    </footer>
+    <!--End Footer-->
+    <script src="all.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
