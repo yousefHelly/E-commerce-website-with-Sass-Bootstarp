@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sass/all.min.css">
+    <link rel="stylesheet" href="Sass/scss/bootstrap.css">
+    <link rel="stylesheet" href="Sass/style.css">
+    <title>RenoshopBee | Sign Up</title>
+</head>
+
+<body>
+    <div class="sign-up-body row m-0">
+        <div class="pics d-none d-md-block col-4  m-0 p-0">
+            <img class="img-fluid" src="imgs/sign-up.jpg" alt="sign up">
+            <div class="info rounded">
+                <h3 class="text-capitalize text-center pt-3">The best online fashion store ever</h3>
+                <p class=" text-center text-white-50 px-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nemo,
+                    sint.</p>
+            </div>
+        </div>
+        <div class="form col-md-8 col-lg-8  bg-white py-5">
+            <div class="form-header py-2 d-flex flex-column justify-content-center px-5">
+                <h2 class="text-center text-md-start fw-normal mb-5">Register</h2>
+                <h3 class="fw-normal text-center text-md-start">Manage your cart efficiently</h3>
+                <p class="text-center text-md-start py-2 mb-5 text-black-50">Let's get you all set up so you can verify
+                    your personal
+                    account and begin setting up your profile.
+                </p>
+            </div>
+            <div class="form-content px-3 px-md-5 d-flex flex-column">
+                <form action="" class="row">
+                    <div class="name mb-3 col-md-6 d-flex flex-column">
+                        <label class="text-black fname" for="fname">First Name</label>
+                        <input id="fname" class="border rounded p-2  bg-light w-100" type="text" maxlength="20" required
+                            placeholder="John">
+                    </div>
+                    <div class="name mb-3 col-md-6 d-flex flex-column">
+                        <label class="text-black lname" for="lname">Last Name</label>
+                        <input id="lname" class="border rounded p-2  bg-light w-100" type="text" maxlength="20" required
+                            placeholder="Doe">
+                    </div>
+                    <div class="pnumber mb-3 col-md-6 d-flex flex-column">
+                        <label class="text-black pnumber" for="pnumber">Phone Number</label>
+                        <input id="pnumber" class="border rounded p-2  bg-light w-100" type="tel" maxlength="15"
+                            required placeholder="(+20)0123456789">
+                    </div>
+                    <div class="bdate mb-3 col-md-6 d-flex flex-column">
+                        <label class="text-black bdate" for="bdate">birth Date</label>
+                        <input id="bdate" class="border rounded p-2  bg-light w-100" type="date" required>
+                    </div>
+                    <div class="role mb-3 col-md-6 d-flex flex-column">
+                        <label class="text-black role" for="role">I'm here as a</label>
+                        <select class="border rounded p-2  bg-light w-100" id="role">
+                            <option value="Customer">Customer</option>
+                            <option value="Seller">Seller</option>
+                        </select>
+                    </div>
+                    <div class="input email mb-3 col-md-6 d-flex flex-column">
+                        <label class="text-black email" for="email">Email</label>
+                        <input id="email" class="border rounded p-2  bg-light w-100 important" type="email" required
+                            placeholder="a@nn.co">
+                    </div>
+                    <div class="input password mb-3 col-md-6 d-flex flex-column">
+                        <label class="text-black password" for="email">Password</label>
+                        <input id="password" class="border rounded p-2  bg-light w-100 important" type="password"
+                            required placeholder="Password">
+                    </div>
+                    <div class="check-pass row mt-3 mb-5 border rounded py-4 bg-light col-md-10 mx-auto">
+                        <span class="lowercase col-lg-6 mb-2">
+                            <i class="far fa-circle me-3"></i>One lowercase character</span>
+                        <span class="special col-lg-6 mb-2">
+                            <i class="far fa-circle me-3"></i>One special character
+                        </span>
+                        <span class="uppercase col-lg-6 mb-2">
+                            <i class="far fa-circle me-3"></i>One uppercase character
+                        </span>
+                        <span class="eightChar col-lg-6 mb-2">
+                            <i class="far fa-circle me-3"></i>8 characters minimum
+                        </span>
+                        <span class="oneNum col-lg-6 mb-2">
+                            <i class="far fa-circle me-3"></i>One number
+                        </span>
+                    </div>
+                    <div class="other-options d-flex flex-column mb-3">
+                        <div class="sendMails mb-2">
+                            <input id="sendMails" type="checkbox">
+                            <label for="sendMails">Yes, i want to receive RenoshopBee emails</label>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-primary py-2 text-white  col-lg-3 ms-lg-2"
+                        value="Create Account">
+                </form>
+                <span class="text-start mt-4">Already have an account? <a href="login.html"
+                        class="text-decoration-none ms-2">Log
+                        in</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="prfilePicModalToggle" aria-hidden="true" data-bs-backdrop="static"
+        aria-labelledby="prfilePicModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="prfilePicModalToggleLabel">Upload Your Photo Now!</h1>
+                </div>
+                <div class="modal-body">
+                    <p class="py-3">are you raedy to upload your photo? let's do it now!</p>
+                    <div class="user-img my-5 mx-auto d-flex flex-column justify-content-center align-items-center">
+                        <div class="img ">
+                            <img class="img-fluid" src="imgs/dUser.png" alt="" srcset="">
+                            <label class="text-black" for="userImg">Upload</label>
+                            <input id="userImg" type="file" accept="image/*" hidden>
+                        </div>
+                        <div class="username pt-2">
+                            <span class="fName">yousef</span> <span class="lName">helly</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary acceptedImg text-white" data-bs-target="#PaymentMethodModalToggle"
+                        data-bs-toggle="modal">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="PaymentMethodModalToggle" aria-hidden="true" data-bs-backdrop="static"
+        aria-labelledby="PaymentMethodModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="PaymentMethodModalToggleLabel">let's Add a Payment Method!</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="row" action="">
+                        <div class="cardNumber mb-3 col-md-6 d-flex flex-column">
+                            <label class="text-black" for="cardNumber">Card number</label>
+                            <input id="cardNumber" maxlength="19" class="border rounded p-2  bg-light w-100"
+                                name="cardNumber" type="text">
+                            <img class="credit-cart-type" src="imgs/credit-card.png" alt="" srcset="">
+                        </div>
+                        <div class="expiryDate mb-3 col-md-6 d-flex flex-column">
+                            <label class="text-black expiryDate" for="expiryDate">Expiry date</label>
+                            <input id="expiryDate" class="border rounded p-2  bg-light w-100" type="month" required>
+                        </div>
+                        <div class="CVC mb-3 col-md-6 d-flex flex-column">
+                            <label class="text-black CVC" for="CVC">CVC</label>
+                            <input id="CVC" class="border rounded p-2  bg-light w-100" type="text" maxlength="4"
+                                required>
+                            <img src="imgs/cvc.png" alt="" srcset="">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        onclick="showConfirmation()">Skip</button>
+                    <button class="btn btn-primary" onclick="showConfirmation()" data-bs-dismiss="modal">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="registerConfirmation d-none">
+        <div class="alert alert-success d-flex justify-content-start flex-column mb-0 pt-5 min-vh-100 border-0 rounded-0"
+            role="alert">
+            <h4 class="alert-heading">
+                Thanks for Joining us, <span class="userName">Yousef</span>!
+                <i class="fas fa-check-circle"></i>
+            </h4>
+            <p>Aww yeah, you successfully Register in our store . Don't forget to Activate your account from the link
+                that
+                we have just sent you.</p>
+            <p>Enjoy shopping!</p>
+            <hr>
+            <p class="mb-0">
+                <a class="text-decoration-none link-primary mx-1" href="index.html">Home Page</a>
+                <a class="text-decoration-none link-primary mx-1" href="sign-up.html">Sign In</a>
+            </p>
+        </div>
+    </div>
+    <script src="all.min.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="Sign-up.js"></script>
+</body>
+
+</html>

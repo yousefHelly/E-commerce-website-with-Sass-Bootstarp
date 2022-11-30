@@ -12,6 +12,14 @@
           transform: translate(-50%, -50%);
 }
 
+.login-body .form .form-content form .email .input svg,
+.login-body .form .form-content form .pass .input svg, .login-body .form .form-content form span.separator::before, .login-body .form .form-content form span.separator::after {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 header .header-social .links .facebook, footer .footer-social .links .facebook {
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -132,6 +140,10 @@ section.best-selling .row .product-card .product-img img, section.featured-produ
   height: 350px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section.best-selling .row .product-card .product-img .product-buttons, section.featured-products .row .product-card .product-img .product-buttons, section.dashboard .products-content .products-grid .product-card .product-img .product-buttons {
@@ -231,6 +243,77 @@ section.dashboard .products-content .pages .next-btn {
 
 section.dashboard .products-content .pages .next-btn:hover {
   background-color: var(--main-hv-color) !important;
+}
+
+.login-body .pics, .sign-up-body .pics {
+  position: relative;
+}
+
+.login-body .pics .info, .sign-up-body .pics .info {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 50;
+  color: white;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  width: 45vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0064001f;
+}
+
+@media (max-width: 991px) {
+  .login-body .pics .info, .sign-up-body .pics .info {
+    width: 18rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .login-body .pics .info, .sign-up-body .pics .info {
+    width: 15rem;
+  }
+}
+
+.login-body .pics img, .sign-up-body .pics img {
+  width: 100%;
+  height: 629px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 75%;
+     object-position: 50% 75%;
+}
+
+@media (max-width: 991px) {
+  .login-body .pics img, .sign-up-body .pics img {
+    height: 100%;
+  }
+}
+
+.login-body .pics::before, .sign-up-body .pics::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(60, 184, 120, 0.25);
 }
 
 ::-moz-selection {
@@ -1059,5 +1142,174 @@ section.dashboard .products-content .product-tags .addTag:focus-visible {
   top: 25px;
   font-size: 2rem;
   cursor: pointer;
+}
+
+.login-body .form .form-content form .email,
+.login-body .form .form-content form .pass {
+  position: relative;
+}
+
+.login-body .form .form-content form .email label,
+.login-body .form .form-content form .pass label {
+  position: absolute;
+  left: 9px;
+  z-index: 55;
+  top: 9px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: text;
+}
+
+.login-body .form .form-content form .email label.clicked,
+.login-body .form .form-content form .pass label.clicked {
+  left: 9px;
+  top: -15px;
+  background-color: white;
+  color: var(--main-color) !important;
+}
+
+.login-body .form .form-content form .email .input,
+.login-body .form .form-content form .pass .input {
+  position: relative;
+}
+
+.login-body .form .form-content form .email .input input:focus,
+.login-body .form .form-content form .pass .input input:focus {
+  border-color: var(--main-color) !important;
+}
+
+.login-body .form .form-content form .email .input input:focus-visible,
+.login-body .form .form-content form .pass .input input:focus-visible {
+  outline: none;
+}
+
+.login-body .form .form-content form .email .input input:focus + svg,
+.login-body .form .form-content form .pass .input input:focus + svg {
+  color: var(--main-color) !important;
+}
+
+.login-body .form .form-content form .email .input svg,
+.login-body .form .form-content form .pass .input svg {
+  position: absolute;
+  right: 10px;
+}
+
+.login-body .form .form-content form span.separator {
+  position: relative;
+  z-index: 1;
+}
+
+.login-body .form .form-content form span.separator::before, .login-body .form .form-content form span.separator::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  left: -15px;
+  margin-top: 2px;
+}
+
+.login-body .form .form-content form span.separator::after {
+  left: initial;
+  right: -15px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .login-body .form {
+    height: 628px;
+  }
+}
+
+.sign-up-body .pics img {
+  height: 100%;
+}
+
+.sign-up-body .pics .info {
+  top: 50px;
+  bottom: unset;
+  width: 20rem;
+}
+
+@media (max-width: 991px) {
+  .sign-up-body .pics .info {
+    width: 18rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sign-up-body .pics .info {
+    width: 15rem;
+  }
+}
+
+.modal .modal-body .user-img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.modal .modal-body .user-img .img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.modal .modal-body .user-img .img label {
+  background-color: #3cb87875;
+  -webkit-backdrop-filter: sepia(1);
+          backdrop-filter: sepia(1);
+  width: 75px;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  border-radius: 50%;
+  padding-top: 5px;
+  font-size: 10px;
+  position: absolute;
+  bottom: -50px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.modal .modal-body .user-img .img:hover label {
+  bottom: 0;
+  font-size: initial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .modal-body form .cardNumber,
+.modal .modal-body form .CVC {
+  position: relative;
+}
+
+.modal .modal-body form .cardNumber img,
+.modal .modal-body form .CVC img {
+  position: absolute;
+  width: 40px;
+  right: 25px;
+  top: 25px;
 }
 /*# sourceMappingURL=style.css.map */

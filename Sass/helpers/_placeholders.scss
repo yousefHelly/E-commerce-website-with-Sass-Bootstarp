@@ -110,6 +110,8 @@
     img {
       height: 350px;
       transition: 0.3s;
+      object-position: center;
+      object-fit: cover;
     }
     .product-buttons {
       position: absolute;
@@ -182,5 +184,43 @@
     &:hover {
       background-color: var(--main-hv-color) !important;
     }
+  }
+}
+
+%login-register-pics-side {
+  .pics {
+    .info {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: max-content;
+      z-index: 50;
+      color: white;
+      backdrop-filter: blur(10px);
+      width: 45vw;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #0064001f;
+      @include breakpoint("under-medium") {
+        width: 18rem;
+      }
+      @include breakpoint("small") {
+        width: 15rem;
+      }
+    }
+    img {
+      width: 100%;
+      height: 629px;
+      object-fit: cover;
+      object-position: 50% 75%;
+      @include breakpoint("under-medium") {
+        height: 100%;
+      }
+    }
+    position: relative;
+    @include overlay(#3cb878, 0.25);
   }
 }

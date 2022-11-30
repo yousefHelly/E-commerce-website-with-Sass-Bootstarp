@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sass/all.min.css">
+    <link rel="stylesheet" href="Sass/scss/bootstrap.css">
+    <link rel="stylesheet" href="Sass/style.css">
+    <title>RenoshopBee | Login</title>
+</head>
+
+<body>
+    <div class="login-body row m-0">
+        <div class="pics d-none d-md-block col-4 col-lg-6  m-0 p-0">
+            <img class="img-fluid" src="imgs/login.jpg" alt="login">
+            <div class="info rounded">
+                <h3 class="text-capitalize text-center pt-3">The best online fashion store ever</h3>
+                <p class=" text-center text-white-50 px-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nemo,
+                    sint.</p>
+            </div>
+        </div>
+        <div class="form col-12 col-md-8 col-lg-6  bg-white py-5">
+            <div class="form-header py-2 d-flex flex-column justify-content-center px-5">
+                <i class="fas fa-shopping-bag mb-3 fs-3 text-primary"></i>
+                <h2 class="text-center fw-normal">Hello Again!</h2>
+                <p class="text-center py-2 text-black-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur, nisi.
+                </p>
+            </div>
+            <div class="form-content px-3 px-md-5 d-flex flex-column">
+                <form action="" class="d-flex flex-column px-md-5">
+                    <div class="email mb-3 w-100 d-flex flex-column">
+                        <div class="input">
+                            <input onfocus="focusInput(document.querySelector(`label.email`))"
+                                onblur="blurInput(this,document.querySelector(`label.email`))" id="email"
+                                class="border rounded p-2  bg-light w-100" type="email" required>
+                            <i class="fas fa-at text-black-50"></i>
+                            <label class="text-black-50 email" for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="pass mb-2 w-100 d-flex flex-column">
+                        <div class="input">
+                            <input onfocus="focusInput(document.querySelector(`label.pass`))"
+                                onblur="blurInput(this,document.querySelector(`label.pass`))" id="pass"
+                                class="border rounded p-2   bg-light w-100" type="password" required>
+                            <i onclick="showPass(this)" style="cursor:pointer;" class="far fa-eye text-black-50"></i>
+                            <label class="text-black-50 pass" for="pass">Password</label>
+                        </div>
+                    </div>
+                    <div class="other-options d-flex justify-content-between mb-5">
+                        <div class="check">
+                            <input id="remember" type="checkbox">
+                            <label for="remember">Remember Me</label>
+                        </div>
+                        <a class="text-decoration-none" href="#">Recovery Password</a>
+                    </div>
+                    <input type="submit" class="btn btn-primary py-2 text-white" value="Login">
+                    <span class="separator text-center py-3">or</span>
+                    <a href="#" class="btn btn-outline-primary py-2">
+                        <img src="imgs/google.png" width="24px">
+                        <span class="text-black-50 ms-2">Sign in with Google</span>
+                    </a>
+                </form>
+                <span class="text-center mt-4">Don't have an account yet? <a href="sign-up.html"
+                        class="text-decoration-none ms-2">Sign
+                        Up</a></span>
+            </div>
+        </div>
+    </div>
+    <script src="all.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script>
+        //animation of input's label
+        function focusInput(target) {
+            target.classList.add("clicked");
+        }
+        function blurInput(current, target) {
+            if (current.value == "") {
+                target.classList.remove("clicked");
+            }
+        }
+        //testing email and password validation
+        let labels = document.querySelectorAll(".input label");
+        let inputs = document.querySelectorAll(".input input");
+        let emailRe = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/;
+        let passRe = /(?=(.*[0-9]))(?=.*[\!@#$%^&*()\\[\]{}\-_+=~`|:;"'<>,.?])(?=.*[a-z])(?=(.*[A-Z]))(?=(.*)).{8,}/;
+        let login = document.querySelector(`input[type="submit"]`);
+        login.onclick = function () {
+            let email = inputs[0].value;
+            let password = inputs[1].value;
+            if (!emailRe.test(email)) {
+                inputs[0].classList.add("border-danger")
+            } else if (emailRe.test(email)) {
+                inputs[0].classList.remove("border-danger")
+            }
+            if (!passRe.test(password)) {
+                inputs[1].classList.add("border-danger")
+            } else if (passRe.test(password)) {
+                inputs[1].classList.remove("border-danger")
+            }
+        }
+
+        //Showing and hiding Password input
+        function showPass(target) {
+            if (inputs[1].type == "password") {
+                inputs[1].type = "text"
+                target.classList.remove("fa-eye")
+                target.classList.add("fa-eye-slash")
+            }
+            else if (inputs[1].type == "text") {
+                inputs[1].type = "password"
+                target.classList.remove("fa-eye-slash")
+                target.classList.add("fa-eye")
+            }
+        }
+    </script>
+</body>
+
+</html>

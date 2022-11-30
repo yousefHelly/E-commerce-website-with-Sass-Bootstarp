@@ -62,7 +62,6 @@ delBtns.forEach((btn)=>{
 let uploadBtn = document.querySelector(".img-upload input");
 
 uploadBtn.addEventListener("change",function(){
-    console.log(uploadBtn.files);
     let fr = new FileReader();
     fr.onload = function(){
         let img = document.createElement("div");
@@ -124,4 +123,5 @@ setInterval(function(){
         };
     })
 },100);
+
 

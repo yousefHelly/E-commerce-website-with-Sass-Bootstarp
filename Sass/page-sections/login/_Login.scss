@@ -1,0 +1,142 @@
+.login-body {
+  @extend %login-register-pics-side;
+  .form {
+    .form-content {
+      form {
+        .email,
+        .pass {
+          position: relative;
+          label {
+            position: absolute;
+            left: 9px;
+            z-index: 55;
+            top: 9px;
+            transition: 0.3s;
+            cursor: text;
+          }
+          label.clicked {
+            left: 9px;
+            top: -15px;
+            background-color: white;
+            color: var(--main-color) !important;
+          }
+
+          .input {
+            position: relative;
+            input {
+              &:focus {
+                border-color: var(--main-color) !important;
+              }
+              &:focus-visible {
+                outline: none;
+              }
+              &:focus + svg {
+                color: var(--main-color) !important;
+              }
+            }
+            svg {
+              position: absolute;
+              right: 10px;
+              @extend %centerY;
+            }
+          }
+        }
+        span.separator {
+          position: relative;
+          z-index: 1;
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: 1px;
+            background-color: rgba($color: black, $alpha: 0.5);
+            z-index: -1;
+            left: -15px;
+            margin-top: 2px;
+            @extend %centerY;
+          }
+          &::after {
+            left: initial;
+            right: -15px;
+          }
+        }
+      }
+    }
+    @include breakpoint("medium") {
+      height: 628px;
+    }
+  }
+}
+//Register page
+
+.sign-up-body {
+  @extend %login-register-pics-side;
+  .pics {
+    img {
+      height: 100%;
+    }
+    .info {
+      top: 50px;
+      bottom: unset;
+      width: 20rem;
+      @include breakpoint("under-medium") {
+        width: 18rem;
+      }
+      @include breakpoint("small") {
+        width: 15rem;
+      }
+    }
+  }
+}
+.modal {
+  .modal-body {
+    .user-img {
+      width: fit-content;
+      .img {
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        label {
+          background-color: #3cb87875;
+          backdrop-filter: sepia(1);
+          width: 75px;
+          height: 75px;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          color: white;
+          border-radius: 50%;
+          padding-top: 5px;
+          font-size: 10px;
+          position: absolute;
+          bottom: -50px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        &:hover label {
+          bottom: 0;
+          font-size: initial;
+          align-items: center;
+        }
+      }
+    }
+    form {
+      .cardNumber,
+      .CVC {
+        position: relative;
+        img {
+          position: absolute;
+          width: 40px;
+          right: 25px;
+          top: 25px;
+        }
+      }
+    }
+  }
+}
