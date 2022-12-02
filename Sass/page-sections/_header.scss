@@ -12,6 +12,12 @@
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
+* {
+  &:focus-within {
+    outline: 0;
+    border-color: var(--main-color) !important;
+  }
+}
 header {
   .header-social {
     .links {
