@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="Sass/all.min.css">
     <link rel="stylesheet" href="Sass/scss/bootstrap.css">
     <link rel="stylesheet" href="Sass/style.css">
-    <title>RenoshopBee | Home</title>
+    <title>RenoshopBee | Women</title>
 </head>
 
 <body>
@@ -46,10 +46,10 @@
                 </button>
                 <div class="collapse navbar-collapse flex-column flex-md-row" id="collapsibleNavId">
                     <ul class="navbar-nav  mt-2 mt-lg-0 order-2 order-md-1">
-                        <li class="nav-item active py-3 px-2 px-lg-3">
-                            <a class="nav-link text-uppercase fw-bold" href="#" aria-current="page">Home</a>
-                        </li>
                         <li class="nav-item py-3 px-2 px-lg-3">
+                            <a class="nav-link text-uppercase fw-bold" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active py-3 px-2 px-lg-3">
                             <a class="nav-link text-uppercase fw-bold" href="shop-grid-full.html">Women</a>
                         </li>
                         <li class="nav-item py-3 px-2 px-lg-3">
@@ -115,202 +115,27 @@
         </nav>
     </header>
     <!--End Header-->
-    <!--Start landing-->
-    <section class="landing">
-        <div class="container d-flex h-100 justify-content-flex-start align-items-center">
-            <div class="landing-text w-50 text-center text-md-start">
-                <h2 class="fw-bold text-secondary text-uppercase fs-1">
-                    The best <span class="d-block text-primary">Woocommerce</span>
-                </h2>
-                <p class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa illum
-                    provident, mollitia distinctio
-                    quod saepe ipsum modi ad iusto numquam.</p>
-                <button class="btn btn-primary text-uppercase py-2 px-3">Buy now</button>
+    <!--Start Product details-->
+    <section class="product-section-grid container">
+        <!--breadcrumb componant-->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb py-5">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Women</li>
+            </ol>
+        </nav>
+        <!--breadcrumb componant-->
+        <div
+            class="filtering-products border-bottom d-flex justify-content-between mb-2 flex-column flex-md-row align-items-center align-items-md-start gap-4 gap-md-0">
+            <div class="results text-black-50 order-2">
+                <p>Showing 1-12 of 44 results</p>
+            </div>
+            <div class="filter text-black-50 order-1">
+                Sort by newness
+                <i class="fas fa-chevron-down ps-5"></i>
             </div>
         </div>
-    </section>
-    <!--End landing-->
-    <!--Start BestSelling-->
-    <section class="best-selling py-5">
-        <div class="container-fluid d-flex justify-content-center align-items-center row mx-auto">
-            <div class="best-sellers col-lg-3 text-center text-lg-left pb-4 pb-lg-0">
-                <h3 class="text-uppercase fw-bold">best sellers</h3>
-                <span class="text-primary">The best productions from us</span>
-                <p class="mt-4 text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aperiam,
-                    eveniet cum odio.</p>
-            </div>
-            <div class="row col-lg-9">
-                <div class="product-card col-md-6 col-lg-4">
-                    <div class="product-img">
-                        <img class="img-fluid" src="imgs/bodycon dress.webp" alt="women">
-                        <div class="product-buttons">
-                            <div class="add-to-cart">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                            <div class="add-to-wishlist">
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <div class="return-product">
-                                <i class="fas fa-retweet"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-name text-capitalize pt-2">
-                        Sweetheart Neck Split Thigh Bodycon Dress
-                    </div>
-                    <div class="product-price mb-2">50</div>
-                    <div class="product-rating">
-                        <i class="fas fas fa-star filled"></i>
-                        <i class="fas fas fa-star filled"></i>
-                        <i class="fas fas fa-star filled"></i>
-                        <i class="fas fas fa-star filled"></i>
-                        <i class="fas far fa-star unfilled"></i>
-                    </div>
-                </div>
-                <div class="product-card col-md-6 col-lg-4">
-                    <div class="product-img">
-                        <img class="img-fluid" src="imgs/ribkint.webp" alt="men">
-                        <div class="product-buttons">
-                            <div class="add-to-cart">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                            <div class="add-to-wishlist">
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <div class="return-product">
-                                <i class="fas fa-retweet"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-name text-capitalize pt-2">
-                        Felegant Solid Rib-knit Tee
-                    </div>
-                    <div class="product-price mb-2">10</div>
-                    <div class="product-rating">
-                        <i class="fas fas fa-star filled"></i>
-                        <i class="fas fas fa-star filled"></i>
-                        <i class="fas fas fa-star filled"></i>
-                        <i class="fas fas fa-star filled"></i>
-                        <i class="fas far fa-star unfilled"></i>
-                    </div>
-                </div>
-                <div class="product-card col-md-6 col-lg-4">
-                    <div class="product-img">
-                        <img class="img-fluid" src="imgs/overcoat.webp" alt="Kids">
-                        <div class="product-buttons">
-                            <div class="add-to-cart">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                            <div class="add-to-wishlist">
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <div class="return-product">
-                                <i class="fas fa-retweet"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-name text-capitalize pt-2">
-                        Men Double Breasted Slant Pocket Overcoat
-                    </div>
-                    <div class="product-price mb-2">47</div>
-                    <div class="product-rating">
-                        <i class="fas fas fa-star filled"></i>
-                        <i class="fas fas fa-star filled"></i>
-                        <i class="fas fas fa-star filled"></i>
-                        <i class="fas fas fa-star filled"></i>
-                        <i class="fas far fa-star unfilled"></i>
-                    </div>
-                </div>
-                <div class="product-card col-md-6 col-lg-4">
-                    <div class="product-img">
-                        <img class="img-fluid" src="imgs/pants.webp" alt="shoes">
-                        <div class="product-buttons">
-                            <div class="add-to-cart">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                            <div class="add-to-wishlist">
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <div class="return-product">
-                                <i class="fas fa-retweet"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-name text-capitalize pt-2">
-                        Men Solid Slant Pocket Sweatpants
-                    </div>
-                    <div class="product-price mb-2">44</div>
-                    <div class="product-rating">
-                        <i class="fas fas fa-star filled"></i>
-                        <i class="fas fas fa-star filled"></i>
-                        <i class="fas fas fa-star filled"></i>
-                        <i class="fas fas fa-star filled"></i>
-                        <i class="fas far fa-star unfilled"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End BestSelling-->
-    <!--Start Features-->
-    <section class="features container-fluid row py-5 m-0">
-        <div class="feature d-flex align-items-center justify-content-center flex-column col-md-6 col-lg-3 p-5 p-lg-0">
-            <i class="fas fa-percent fs-2 p-4 text-black-50"></i>
-            <h3 class="text-uppercase fs-5 fw-bold mb-0">Special Offers</h3>
-            <span class="text-capitalize text-black-50">Shop big save big</span>
-        </div>
-
-        <div class="feature d-flex align-items-center justify-content-center flex-column col-md-6 col-lg-3 p-5 p-lg-0">
-            <i class="fas fa-paper-plane fs-2 p-4 text-black-50"></i>
-            <h3 class="text-uppercase fs-5 fw-bold mb-0">Free delivery</h3>
-            <span class="text-capitalize text-black-50">on orders above $99</span>
-        </div>
-
-        <div class="feature d-flex align-items-center justify-content-center flex-column col-md-6 col-lg-3 p-5 p-lg-0">
-            <i class="fas fa-retweet fs-2 p-4 text-black-50"></i>
-            <h3 class="text-uppercase fs-5 fw-bold mb-0">30 days return</h3>
-            <span class="text-capitalize text-black-50">policy we offers</span>
-        </div>
-
-        <div class="feature d-flex align-items-center justify-content-center flex-column col-md-6 col-lg-3 p-5 p-lg-0">
-            <i class="fas fa-rocket fs-2 p-4 text-black-50"></i>
-            <h3 class="text-uppercase fs-5 fw-bold mb-0">fastest shipping</h3>
-            <span class="text-capitalize text-black-50">Shop big save big</span>
-        </div>
-    </section>
-    <!--End Features-->
-    <!--Offers & collections Start-->
-    <section class="offers row m-0">
-        <div class="offer1 d-flex justify-content-center align-items-center flex-column p-5 col-md-6 col-xl-4">
-            <div class="offer-text text-white text-center text-uppercase">
-                <span class="top">Fashion</span>
-                <h3 class="fs-2">Summer & autumn</h3>
-                <span class="bottom">Winter Collection</span>
-            </div>
-        </div>
-        <div class="offer2 d-flex justify-content-center align-items-center flex-column p-5 col-md-6 col-xl-4">
-            <div class="offer-text text-white text-center text-uppercase">
-                <span class="top">Fashion for men</span>
-                <h3 class="fs-2">30% off</h3>
-                <span class="bottom">Winter Collection</span>
-            </div>
-        </div>
-        <div class="offer3 d-flex justify-content-center align-items-center flex-column p-5 col-md-6 col-xl-4">
-            <div class="offer-text text-white text-center text-uppercase">
-                <span class="top">Fashion</span>
-                <h3 class="fs-2">New fashion styles</h3>
-                <span class="bottom">Winter Collection</span>
-            </div>
-        </div>
-    </section>
-    <!--Offers & collections End-->
-    <!--Start Featured products-->
-    <section class="featured-products container-fluid pt-5">
-        <div class="header text-center py-3">
-            <h3 class="fw-bold text-uppercase">Featured products</h3>
-            <span class="text-primary">Newest trends from top brands</span>
-        </div>
-        <div class="row py-5">
+        <div class="products-grid row py-5">
             <div class="product-card col-md-6 col-lg-3">
                 <div class="product-img">
                     <img class="img-fluid" src="imgs/toddler hoodie.webp" alt="Sweatpants">
@@ -583,48 +408,83 @@
                     <i class="fas far fa-star unfilled"></i>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--End Featured products-->
-    <!--Start Special Discount-->
-    <section class="discount">
-        <div class="row m-0">
-            <div
-                class="discount-form col-lg-6 order-2 order-lg-1 text-white text-center d-flex align-items-center justify-content-center flex-column">
-                <div class="content">
-                    <h3 class="text-capitlaize">Get out special discount</h3>
-                    <div class="text">
-                        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, officiis.
-                        </p>
-                        <p class="m-0">register your email for news and special offers</p>
-                    </div>
-                    <div class="form d-flex justify-content-center align-items-center flex-column flex-md-row">
-                        <input class="py-2 px-3 border-0 w-75 my-4" type="email" placeholder="E-mail Address">
-                        <button class="btn btn-primary text-uppercase text-white ms-2 py-2 w-50">Get Coupon
-                            Now</button>
+            <div class="product-card col-md-6 col-lg-3">
+                <div class="product-img">
+                    <img class="img-fluid" src="imgs/sweetppantss.webp" alt="product">
+                    <div class="product-buttons">
+                        <div class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="add-to-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="return-product">
+                            <i class="fas fa-retweet"></i>
+                        </div>
                     </div>
                 </div>
+                <div class="product-name text-capitalize pt-2">
+                    Men Letter Graphic Two Tone Drawstring Waist Sweatpants
+                </div>
+                <div class="product-price mb-2">50</div>
+                <div class="product-rating">
+                    <i class="fas fas fa-star filled"></i>
+                    <i class="fas fas fa-star filled"></i>
+                    <i class="fas fas fa-star filled"></i>
+                    <i class="fas fas fa-star filled"></i>
+                    <i class="fas far fa-star unfilled"></i>
+                </div>
             </div>
-            <div class="our-partners col-lg-6 order-1 d-flex align-items-center justify-content-center py-5 py-lg-0">
-                <div class="row gap-5 d-flex justify-content-center align-items-center">
-                    <img class="col-3 img-fluid" src="imgs/partner-1.png" alt="">
-                    <img class="col-3 img-fluid" src="imgs/partner-2.png" alt="">
-                    <img class="col-3 img-fluid" src="imgs/partner-3.png" alt="">
-                    <img class="col-3 img-fluid" src="imgs/partner-4.png" alt="">
+            <div class="product-card col-md-6 col-lg-3">
+                <div class="product-img">
+                    <img class="img-fluid" src="imgs/menhoodie.webp" alt="product">
+                    <div class="product-buttons">
+                        <div class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="add-to-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="return-product">
+                            <i class="fas fa-retweet"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-name text-capitalize pt-2">
+                    Men Japanese Letter Graphic Kangaroo Pocket Drawstring Hoodie
+
+                </div>
+                <div class="product-price mb-2">33</div>
+                <div class="product-rating">
+                    <i class="fas fas fa-star filled"></i>
+                    <i class="fas fas fa-star filled"></i>
+                    <i class="fas fas fa-star filled"></i>
+                    <i class="fas fas fa-star filled"></i>
+                    <i class="fas far fa-star unfilled"></i>
                 </div>
             </div>
         </div>
+        <div class="pages mx-5 my-5 d-flex justify-content-center">
+            <button class="prev-btn rounded border bg-light px-3">
+                Previous
+            </button>
+            <span class="py-2 active px-3 bg-primary text-white border">1</span>
+            <span class="py-2 px-3 bg-light border">2</span>
+            <span class="py-2 px-3 bg-light border">3</span>
+            <button class="next-btn rounded border bg-light px-3">
+                Next
+            </button>
+        </div>
     </section>
-    <!--End Special Discount-->
     <!--Start Footer-->
-    <footer class="">
+    <footer>
         <div class="container footer-social row align-items-center justify-content-center mx-auto">
-            <p class="col-md-6 col-lg-9 py-3 m-0 border-bottom border-md-0 text-center text-md-start">we are confident
+            <p class="col-md-6 col-lg-9 py-3 pb-md-0 m-0 border-md-0 text-center text-md-start">we are confident
                 we have provided all the
                 best for you. Stay connect with
                 us</p>
             <div class="links col-md-6 col-lg-3 d-flex gap-4 align-items-center py-3 
-            border-start border-end">
+            border-start border-end border-top">
                 <a class="text-secondary" href=""><i class="fab fa-facebook-f facebook"></i></a>
                 <a class="text-secondary" href=""><i class="fab fab fa-twitter twitter"></i></a>
                 <a class="text-secondary" href=""><i class="fab fab fa-instagram instagram"></i></a>
@@ -721,6 +581,7 @@
     <script src="all.min.js"></script>
     <script src="bootstrap.min.js"></script>
     <script src="main.js"></script>
+    <script src="product-details.js"></script>
 </body>
 
 </html>

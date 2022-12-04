@@ -110,8 +110,12 @@
     img {
       height: 350px;
       transition: 0.3s;
+      width: 100%;
       object-position: center;
       object-fit: cover;
+      @include breakpoint("under-medium") {
+        object-fit: contain;
+      }
     }
     .product-buttons {
       position: absolute;

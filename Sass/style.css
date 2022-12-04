@@ -106,29 +106,29 @@ header nav.navbar .others .card-items::before, header nav.navbar .others .search
   z-index: 50;
 }
 
-section.best-selling .row .product-card, section.featured-products .row .product-card, section.dashboard .products-content .products-grid .product-card, .related-products .products-grid .product-card {
+section.best-selling .row .product-card, section.featured-products .row .product-card, section.dashboard .products-content .products-grid .product-card, .related-products .products-grid .product-card, section.product-section-grid .products-grid .product-card {
   max-height: 450px;
   margin-bottom: 3rem;
   cursor: pointer;
 }
 
-section.best-selling .row .product-card .product-price, section.featured-products .row .product-card .product-price, section.dashboard .products-content .products-grid .product-card .product-price, .related-products .products-grid .product-card .product-price {
+section.best-selling .row .product-card .product-price, section.featured-products .row .product-card .product-price, section.dashboard .products-content .products-grid .product-card .product-price, .related-products .products-grid .product-card .product-price, section.product-section-grid .products-grid .product-card .product-price {
   color: var(--main-color);
 }
 
-section.best-selling .row .product-card .product-price::before, section.featured-products .row .product-card .product-price::before, section.dashboard .products-content .products-grid .product-card .product-price::before, .related-products .products-grid .product-card .product-price::before {
+section.best-selling .row .product-card .product-price::before, section.featured-products .row .product-card .product-price::before, section.dashboard .products-content .products-grid .product-card .product-price::before, .related-products .products-grid .product-card .product-price::before, section.product-section-grid .products-grid .product-card .product-price::before {
   content: "$";
 }
 
-section.best-selling .row .product-card .product-price::after, section.featured-products .row .product-card .product-price::after, section.dashboard .products-content .products-grid .product-card .product-price::after, .related-products .products-grid .product-card .product-price::after {
+section.best-selling .row .product-card .product-price::after, section.featured-products .row .product-card .product-price::after, section.dashboard .products-content .products-grid .product-card .product-price::after, .related-products .products-grid .product-card .product-price::after, section.product-section-grid .products-grid .product-card .product-price::after {
   content: ".00";
 }
 
-section.best-selling .row .product-card .product-rating svg, section.featured-products .row .product-card .product-rating svg, section.dashboard .products-content .products-grid .product-card .product-rating svg, .related-products .products-grid .product-card .product-rating svg {
+section.best-selling .row .product-card .product-rating svg, section.featured-products .row .product-card .product-rating svg, section.dashboard .products-content .products-grid .product-card .product-rating svg, .related-products .products-grid .product-card .product-rating svg, section.product-section-grid .products-grid .product-card .product-rating svg {
   color: #ff9600;
 }
 
-section.best-selling .row .product-card .product-img, section.featured-products .row .product-card .product-img, section.dashboard .products-content .products-grid .product-card .product-img, .related-products .products-grid .product-card .product-img {
+section.best-selling .row .product-card .product-img, section.featured-products .row .product-card .product-img, section.dashboard .products-content .products-grid .product-card .product-img, .related-products .products-grid .product-card .product-img, section.product-section-grid .products-grid .product-card .product-img {
   position: relative;
   overflow: hidden;
   -webkit-transition: 0.3s;
@@ -136,17 +136,25 @@ section.best-selling .row .product-card .product-img, section.featured-products 
   cursor: pointer;
 }
 
-section.best-selling .row .product-card .product-img img, section.featured-products .row .product-card .product-img img, section.dashboard .products-content .products-grid .product-card .product-img img, .related-products .products-grid .product-card .product-img img {
+section.best-selling .row .product-card .product-img img, section.featured-products .row .product-card .product-img img, section.dashboard .products-content .products-grid .product-card .product-img img, .related-products .products-grid .product-card .product-img img, section.product-section-grid .products-grid .product-card .product-img img {
   height: 350px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 100%;
   -o-object-position: center;
      object-position: center;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-section.best-selling .row .product-card .product-img .product-buttons, section.featured-products .row .product-card .product-img .product-buttons, section.dashboard .products-content .products-grid .product-card .product-img .product-buttons, .related-products .products-grid .product-card .product-img .product-buttons {
+@media (max-width: 991px) {
+  section.best-selling .row .product-card .product-img img, section.featured-products .row .product-card .product-img img, section.dashboard .products-content .products-grid .product-card .product-img img, .related-products .products-grid .product-card .product-img img, section.product-section-grid .products-grid .product-card .product-img img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+section.best-selling .row .product-card .product-img .product-buttons, section.featured-products .row .product-card .product-img .product-buttons, section.dashboard .products-content .products-grid .product-card .product-img .product-buttons, .related-products .products-grid .product-card .product-img .product-buttons, section.product-section-grid .products-grid .product-card .product-img .product-buttons {
   position: absolute;
   right: -35px;
   top: 10px;
@@ -154,7 +162,7 @@ section.best-selling .row .product-card .product-img .product-buttons, section.f
   transition: 0.3s;
 }
 
-section.best-selling .row .product-card .product-img .product-buttons > div, section.featured-products .row .product-card .product-img .product-buttons > div, section.dashboard .products-content .products-grid .product-card .product-img .product-buttons > div, .related-products .products-grid .product-card .product-img .product-buttons > div {
+section.best-selling .row .product-card .product-img .product-buttons > div, section.featured-products .row .product-card .product-img .product-buttons > div, section.dashboard .products-content .products-grid .product-card .product-img .product-buttons > div, .related-products .products-grid .product-card .product-img .product-buttons > div, section.product-section-grid .products-grid .product-card .product-img .product-buttons > div {
   background-color: var(--main-color);
   color: white;
   margin-bottom: 10px;
@@ -173,15 +181,15 @@ section.best-selling .row .product-card .product-img .product-buttons > div, sec
   cursor: pointer;
 }
 
-section.best-selling .row .product-card .product-img .product-buttons > div:hover, section.featured-products .row .product-card .product-img .product-buttons > div:hover, section.dashboard .products-content .products-grid .product-card .product-img .product-buttons > div:hover, .related-products .products-grid .product-card .product-img .product-buttons > div:hover {
+section.best-selling .row .product-card .product-img .product-buttons > div:hover, section.featured-products .row .product-card .product-img .product-buttons > div:hover, section.dashboard .products-content .products-grid .product-card .product-img .product-buttons > div:hover, .related-products .products-grid .product-card .product-img .product-buttons > div:hover, section.product-section-grid .products-grid .product-card .product-img .product-buttons > div:hover {
   background-color: rgba(var(--main-color), 0.75);
 }
 
-section.best-selling .row .product-card .product-img:hover .product-buttons, section.featured-products .row .product-card .product-img:hover .product-buttons, section.dashboard .products-content .products-grid .product-card .product-img:hover .product-buttons, .related-products .products-grid .product-card .product-img:hover .product-buttons {
+section.best-selling .row .product-card .product-img:hover .product-buttons, section.featured-products .row .product-card .product-img:hover .product-buttons, section.dashboard .products-content .products-grid .product-card .product-img:hover .product-buttons, .related-products .products-grid .product-card .product-img:hover .product-buttons, section.product-section-grid .products-grid .product-card .product-img:hover .product-buttons {
   right: 10px;
 }
 
-section.best-selling .row .product-card .product-img:hover::before, section.featured-products .row .product-card .product-img:hover::before, section.dashboard .products-content .products-grid .product-card .product-img:hover::before, .related-products .products-grid .product-card .product-img:hover::before {
+section.best-selling .row .product-card .product-img:hover::before, section.featured-products .row .product-card .product-img:hover::before, section.dashboard .products-content .products-grid .product-card .product-img:hover::before, .related-products .products-grid .product-card .product-img:hover::before, section.product-section-grid .products-grid .product-card .product-img:hover::before {
   content: "";
   position: absolute;
   left: 0;
@@ -191,12 +199,12 @@ section.best-selling .row .product-card .product-img:hover::before, section.feat
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-section.best-selling .row .product-card .product-name, section.featured-products .row .product-card .product-name, section.dashboard .products-content .products-grid .product-card .product-name, .related-products .products-grid .product-card .product-name {
+section.best-selling .row .product-card .product-name, section.featured-products .row .product-card .product-name, section.dashboard .products-content .products-grid .product-card .product-name, .related-products .products-grid .product-card .product-name, section.product-section-grid .products-grid .product-card .product-name {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-section.best-selling .row .product-card .product-name:hover, section.featured-products .row .product-card .product-name:hover, section.dashboard .products-content .products-grid .product-card .product-name:hover, .related-products .products-grid .product-card .product-name:hover {
+section.best-selling .row .product-card .product-name:hover, section.featured-products .row .product-card .product-name:hover, section.dashboard .products-content .products-grid .product-card .product-name:hover, .related-products .products-grid .product-card .product-name:hover, section.product-section-grid .products-grid .product-card .product-name:hover {
   color: var(--main-color);
 }
 
@@ -219,29 +227,29 @@ header nav.navbar .others .user-info .user-nav .Dark-mode-switcher::after {
   transition: 0.3s;
 }
 
-section.dashboard .products-content .pages span:not(.active) {
+section.dashboard .products-content .pages span:not(.active), section.product-section-grid .pages span:not(.active) {
   cursor: pointer;
 }
 
-section.dashboard .products-content .pages span:not(.active):hover {
+section.dashboard .products-content .pages span:not(.active):hover, section.product-section-grid .pages span:not(.active):hover {
   background-color: var(--main-hv-color) !important;
 }
 
-section.dashboard .products-content .pages .prev-btn {
+section.dashboard .products-content .pages .prev-btn, section.product-section-grid .pages .prev-btn {
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }
 
-section.dashboard .products-content .pages .prev-btn:hover {
+section.dashboard .products-content .pages .prev-btn:hover, section.product-section-grid .pages .prev-btn:hover {
   background-color: var(--main-hv-color) !important;
 }
 
-section.dashboard .products-content .pages .next-btn {
+section.dashboard .products-content .pages .next-btn, section.product-section-grid .pages .next-btn {
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
 }
 
-section.dashboard .products-content .pages .next-btn:hover {
+section.dashboard .products-content .pages .next-btn:hover, section.product-section-grid .pages .next-btn:hover {
   background-color: var(--main-hv-color) !important;
 }
 
@@ -547,7 +555,7 @@ header nav.navbar .others .user-info .user-nav.show {
 }
 
 section.landing {
-  background-image: url("../imgs/landing-2.jpg");
+  background-image: url("../imgs/landing-3.jpg");
   background-position: 50% 30%;
   background-size: cover;
   height: 600px;
@@ -705,7 +713,7 @@ section.offers .offer3:hover .offer-text::after {
 }
 
 section.offers .offer2 {
-  background-image: url("../imgs/offer-2.jpg");
+  background-image: url("../imgs/offer2.jpg");
 }
 
 section.offers .offer3 {
@@ -890,7 +898,7 @@ section.offers .offer-text::after {
 
 .discount .discount-form {
   position: relative;
-  background-image: url("../imgs/landing-2.jpg");
+  background-image: url("../imgs/landing-3.jpg");
   background-size: cover;
   position: relative;
   height: 300px;

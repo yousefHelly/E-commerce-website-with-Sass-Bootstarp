@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="Sass/all.min.css">
     <link rel="stylesheet" href="Sass/scss/bootstrap.css">
     <link rel="stylesheet" href="Sass/style.css">
-    <title>RenoshopBee | Add Product</title>
+    <title>RenoshopBee | Cart</title>
 </head>
 
 <body>
@@ -37,7 +37,7 @@
         <!--Social media && contacts Info-->
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <div class="container-fluid flex-sm-column flex-xl-row">
-                <a class="navbar-brand text-uppercase" href="index.html"><span
+                <a class="navbar-brand text-uppercase" href="#"><span
                         class="text-primary fw-bold">RenoShop</span>Bee</a>
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -88,7 +88,7 @@
                                     <img class="img-fluid" src="imgs/skills-05.png" alt="" srcset="">
                                 </div>
                                 <p class="text-black-50 m-0 text-center d-none d-xl-block">Welcome Back <br><span
-                                        class="userName">Admin</span> !</p>
+                                        class="userName">Yousef</span> !</p>
                                 <i class="fas fa-chevron-down text-black-50"></i>
                             </div>
                             <div class="user-nav">
@@ -115,137 +115,209 @@
         </nav>
     </header>
     <!--End Header-->
-    <!--Start Dashboard-->
-    <section class="dashboard row m-0">
-        <nav class="dashboard-nav bg-light col-lg-2 container-fluid p-0">
-            <ul class="list-unstyled d-flex justify-content-center align-items-flex-start flex-column">
-                <li class="px-3 my-1 mx-2 py-2 d-flex align-items-center rounded-1">
-                    <i class="far fa-chart-bar me-3"></i>
-                    Dashboard
-                </li>
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header active d-flex align-items-center rounded-1" id="headingOne">
-                            <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <svg class="svg-inline--fa fa-bag-shopping me-3" aria-hidden="true" focusable="false"
-                                    data-prefix="fas" data-icon="bag-shopping" role="img"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
-                                    <path fill="currentColor"
-                                        d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 96c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24zm200-24c0 13.3-10.7 24-24 24s-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24z">
-                                    </path>
-                                </svg><!-- <i class="fas fa-shopping-bag me-3"></i> Font Awesome fontawesome.com -->
-                                Products
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body p-0">
-
-                                <ul class="products-list list-unstyled text-black-50 bg-light px-3">
-                                    <li class="py-2 ps-2"><a class="text-decoration-none  text-black-50"
-                                            href="admin-view-products.html">View
-                                            products</a></li>
-                                    <li class="py-2 ps-2 active"><a class="text-decoration-none active text-black-50"
-                                            href="#">Add/Edit
-                                            products</a></li>
-                                    <li class="py-2 ps-2"><a class="text-decoration-none text-black-50"
-                                            href="#">Categories</a></li>
-                                    <li class="py-2 ps-2"><a class="text-decoration-none text-black-50"
-                                            href="#">Brands</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </ul>
+    <!--Start cart-->
+    <section class="cart container">
+        <!--breadcrumb componant-->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb py-5">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Cart</li>
+            </ol>
         </nav>
+        <!--breadcrumb componant-->
+        <table class="row table table-bordered table-hover m-0">
+            <thead class=" p-0">
+                <tr class="m-0  row align-items-center justify-content-center">
+                    <th class="py-4 col-4  text-center">Products</th>
+                    <th class="py-4 col-2 d-none d-md-block text-center">Color/size</th>
+                    <th class="py-4 col-4 col-md-2 text-center">Quantity</th>
+                    <th class="p-4 col-2 d-none d-md-block text-center">Price</th>
+                    <th class="p-4 col-4 col-md-2 text-center">Total</th>
+                </tr>
+            </thead>
+            <tbody class="p-0">
+                <tr class="m-0 row  justify-content-center">
+                    <td class="d-flex col-4 align-items-center">
+                        <div class="d-flex align-items-center">
+                            <div class="img w-50">
+                                <img class="img-fluid" src="imgs/man7.png" alt="">
+                            </div>
+                            Sporty Sleevlees Gillet
+                        </div>
+                    </td>
+                    <td class="py-4 col-2 d-none d-md-flex align-items-center justify-content-center text-center">
+                        <div class="d-flex flex-column align-items-center">
+                            <p>Size:Xlarge</p>
+                            <p>Color:Black</p>
+                        </div>
+                    </td>
+                    <td class="p-4 col-4 col-md-2 d-flex align-items-center justify-content-center text-center">
+                        <div class="holder p-3">
+                            <div class="q border p-2 d-flex justify-content-center align-items-center">
+                                1
+                            </div>
+                        </div>
+                    </td>
+                    <td class="p-4 col-2 d-none d-md-flex justify-content-center align-items-center text-center">
+                        <div class="">$120</div>
 
-        <div class="products-content col-lg-10">
-            <div class="header-content d-flex align-items-center justify-content-between p-5 pb-0">
-                <h3>Create Product</h3>
-            </div>
-            <div class="grid-content m-2 m-lg-5 py-2 bg-light rounded">
-                <div class="product-add-form px-5 py-3 row">
-                    <label class="p-0" for="p-t">Product title</label>
-                    <input class="border rounded bg-light py-1 mb-3" type="text" name="product-title" id="p-t">
-                    <label class="p-0" for="p-d">Describtion</label>
-                    <textarea placeholder="Type here" class="border rounded bg-light py-1 mb-3"
-                        name="Product-Describtion" id="p-d"></textarea>
-                    <span class="imgs p-0">Images</span>
-                    <div class="imgs-holder row gap-4 justify-content-center justify-content-md-start">
-                        <div class="img mb-3 col-2 p-0">
-                            <img class="img-fluid p-3 border rounded d-flex flex-column align-items-center h-100 w-100"
-                                src="imgs/product-add.png" alt="">
-                            <div class="expand bg-light rounded-circle justify-content-center align-items-center">
-                                <i class="fas fa-expand text-black-50"></i>
+                    </td>
+                    <td class="p-4 col-4 col-md-2 d-flex justify-content-center align-items-center text-center">
+                        <div class="d-flex justify-content-around align-items-center gap-5">$120
+                            <i class="fas fa-window-close text-danger"></i>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="m-0 row  justify-content-center">
+                    <td class="d-flex col-4 align-items-center">
+                        <div class="d-flex align-items-center">
+                            <div class="img w-50">
+                                <img class="img-fluid" src="imgs/man6.png" alt="">
                             </div>
-                            <div class="del bg-light rounded-circle justify-content-center align-items-center">
-                                <i class="fas fa-trash text-black-50"></i>
+                            Sporty Sleevlees Gillet
+                        </div>
+                    </td>
+                    <td class="py-4 col-2 d-none d-md-flex align-items-center justify-content-center text-center">
+                        <div class="d-flex flex-column align-items-center">
+                            <p>Size:Xlarge</p>
+                            <p>Color:Black</p>
+                        </div>
+                    </td>
+                    <td class="p-4 col-4 col-md-2 d-flex align-items-center justify-content-center text-center">
+                        <div class="holder p-3">
+                            <div class="q border p-2 d-flex justify-content-center align-items-center">
+                                1
                             </div>
                         </div>
-                        <div class="img-upload mb-3 col-md-2 p-0">
-                            <input class="mb-3" type="file" accept="image/*" id="p-i" hidden>
-                            <label
-                                class="p-4 border rounded h-100 d-flex flex-column align-items-center justify-content-center text-black-50"
-                                for="p-i"><i class="fas fa-cloud-upload-alt fs-1 text-black-50 mb-2"></i>Upload</label>
+                    </td>
+                    <td class="p-4 col-2 d-none d-md-flex justify-content-center align-items-center text-center">
+                        <div class="">$120</div>
+                    </td>
+                    <td class="p-4 col-4 col-md-2 d-flex justify-content-center align-items-center text-center">
+                        <div class="d-flex justify-content-around align-items-center gap-5">$120
+                            <i class="fas fa-window-close text-danger"></i>
                         </div>
-                    </div>
-                    <label class="p-0" for="">Tags</label>
-                    <div class="product-tags border rounded p-3 mx-0 mb-3 row">
-                        <span class="tag tag-men border rounded ps-2 pe-5 py-1 me-md-1 my-1 col-6 col-md-2">Men</span>
-                        <span
-                            class="tag tag-clothes border rounded ps-2 pe-5 py-1 me-md-1 my-1 col-6 col-md-2">Clothes</span>
-                        <span
-                            class="tag tag-fashion border rounded ps-2 pe-5 py-1 me-md-1 my-1 col-6 col-md-2">Fashion</span>
-                        <input type="text" class="addTag bg-light border-0 col-6 col-md-2">
-                    </div>
-                    <label class="p-0" for="p-c">Category</label>
-                    <select class="border bg-light px-3 py-2 col-md-2 mb-3 rounded text-black-50" name="category"
-                        id="p-c">
-                        <option value="Women">Women</option>
-                        <option value="Men">Men</option>
-                        <option value="Kids">Kids</option>
-                        <option value="Jewellery">Jewellery</option>
-                        <option value="Accssories">Accssories</option>
-                    </select>
-                    <label class="p-0" for="p-p">Price</label>
-                    <input class="border rounded bg-light py-1 mb-md-3 col-8 col-md-2" type="text"
-                        placeholder="Type here" name="product-title" id="p-p">
-                    <select class="border bg-light px-3 py-2 col-4 col-md-2 mb-md-3 rounded ms-md-2 text-black-50"
-                        name="Currency" id="p-c">
-                        <option value="usd">USD</option>
-                        <option value="egp">EGP</option>
-                        <option value="sar">SAR</option>
-                        <option value="cad">CAD</option>
-                    </select>
-                    <div class="check-box my-3 p-0">
-                        <input type="checkbox" id="publish-on-site" name="publish-site">
-                        <label for="publish-on-site">Publish on site</label>
-                    </div>
-                    <button class="btn btn-primary text-white col-md-2 py-2">Submit item</button>
-                </div>
-                <div class="expanded-img">
-                    <img src="imgs/offer-2.jpg">
-                    <span class="img-description">lablaba</span>
-                    <div class="close">
-                        <i class="far fa-window-close"></i>
-                    </div>
+                    </td>
+                </tr>
+                <tr class="m-0 row  justify-content-center">
+                    <td class="d-flex col-4 align-items-center">
+                        <div class="d-flex align-items-center">
+                            <div class="img w-50">
+                                <img class="img-fluid" src="imgs/woman8.png" alt="">
+                            </div>
+                            Sporty Sleevlees Gillet
+                        </div>
+                    </td>
+                    <td class="py-4 col-2 d-none d-md-flex align-items-center justify-content-center text-center">
+                        <div class="d-flex flex-column align-items-center">
+                            <p>Size:Xlarge</p>
+                            <p>Color:Black</p>
+                        </div>
+                    </td>
+                    <td class="p-4 col-4 col-md-2 d-flex align-items-center justify-content-center text-center">
+                        <div class="holder p-3">
+                            <div class="q border p-2 d-flex justify-content-center align-items-center">
+                                1
+                            </div>
+                        </div>
+                    </td>
+                    <td class="p-4 col-2 d-none d-md-flex justify-content-center align-items-center text-center">
+                        <div class="">$120</div>
+                    </td>
+                    <td class="p-4 col-4 col-md-2 d-flex justify-content-center align-items-center text-center">
+                        <div class="d-flex justify-content-around align-items-center gap-5">$120
+                            <i class="fas fa-window-close text-danger"></i>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot class="p-0">
+                <tr class="m-0 row  justify-content-center">
+                    <td class="d-flex justify-content-center" colspan="5">
+                        <button
+                            class=" btn btn-primary text-light text-uppercase rounded-0 px-3 ms-md-auto me-md-3 my-3">Continue
+                            Shopping</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="other-inputs row py-5">
+            <div class="coupon-code col-md-6 px-3 p-0 mb-5">
+                <h5 class="text-uppercase">Use coupon code</h5>
+                <p class="text-black-50 text-capitalize mb-1">enter your coupon here</p>
+                <div class="coupon-input row m-0">
+                    <input id="couponCode" class="border p-2 col-9 bg-light" type="text" maxlength="10"
+                        placeholder="Enter your coupon here">
+                    <button class="btn btn-primary text-uppercase col-3 text-white rounded-0">apply</button>
                 </div>
             </div>
-        </div>
+            <div class="voucher-code col-md-6 px-3 p-0 mb-5">
+                <h5 class="text-uppercase">Use gift voucher</h5>
+                <p class="text-black-50 text-capitalize mb-1">enter your gift voucher code here</p>
+                <div class="voucher-input row m-0">
+                    <input id="voucherCode" class="border p-2 col-9 bg-light" type="text" maxlength="10"
+                        placeholder="Enter gift voucher here">
+                    <button class="btn btn-primary text-uppercase col-3 text-white rounded-0">apply</button>
+                </div>
+            </div>
+            <div class="Shipping col-md-6 px-3 p-0 mb-5">
+                <h5 class="text-uppercase">Shipping availability</h5>
+                <div class="Shipping-input row m-0">
+                    <label class="px-0 py-2 text-secondary" for="Country">Select Country</label>
+                    <select id="Country" class="form-select form-select-md rounded-0" name="Country" id="Country">
+                        <option value="EGY">Egypt</option>
+                        <option value="KSA">Saudi Arabia</option>
+                    </select>
+                    <label class="px-0 py-2 text-secondary" for="State">State</label>
+                    <input id="State" class="border p-2 bg-light" type="text" maxlength="15"
+                        placeholder="Enter your State here">
+                    <label class="px-0 py-2 text-secondary" for="PCode">Postal Code</label>
+                    <input id="PCode" class="border p-2 bg-light" type="text" maxlength="8"
+                        placeholder="Enter your Postal Code here">
+                    <button
+                        class=" btn btn-white text-black text-uppercase border col-md-5 rounded-0 px-3 me-auto my-3">Update
+                        Totals</button>
+                </div>
+            </div>
+            <div class="calcuation col-md-6 px-3 p-0 mb-5 row m-0">
+                <h5 class="text-uppercase p-0">Shopping cart calcuation</h5>
+                <table class="table border my-4">
+                    <tbody>
+                        <tr>
+                            <td class="ps-5 p-4 border-0">Subtotal</td>
+                            <td class="text-end pe-5 p-4 border-0">$450</td>
+                        </tr>
+                        <tr>
+                            <td class="ps-5 p-4 border-0">Coupon</td>
+                            <td class="text-end pe-5 p-4 border-0">-$50</td>
+                        </tr>
+                        <tr>
+                            <td class="ps-5 p-4 border-0">Shipping</td>
+                            <td class="text-end pe-5 p-4 border-0">Free Shipping</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="border-top">
+                            <td class="ps-5 p-4">Total</td>
+                            <td class="text-end pe-5 p-4">$400</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <button class="btn btn-primary text-uppercase text-white rounded-0 col-md-5 ms-auto">Proceed to
+                    checkout</button>
+            </div>
         </div>
     </section>
-    <!--End Dashboard-->
+    <!--End cart-->
     <!--Start Footer-->
-    <footer class="">
+    <footer>
         <div class="container footer-social row align-items-center justify-content-center mx-auto">
-            <p class="col-md-6 col-lg-9 py-3 m-0 border-bottom border-md-0 text-center text-md-start">we are confident
+            <p class="col-md-6 col-lg-9 py-3 pb-md-0 m-0 border-md-0 text-center text-md-start">we are confident
                 we have provided all the
                 best for you. Stay connect with
                 us</p>
             <div class="links col-md-6 col-lg-3 d-flex gap-4 align-items-center py-3 
-            border-start border-end">
+            border-start border-end border-top">
                 <a class="text-secondary" href=""><i class="fab fa-facebook-f facebook"></i></a>
                 <a class="text-secondary" href=""><i class="fab fab fa-twitter twitter"></i></a>
                 <a class="text-secondary" href=""><i class="fab fab fa-instagram instagram"></i></a>
@@ -270,7 +342,7 @@
                         <a href="">
                             <li class="py-2">Privacy Policy</li>
                         </a>
-                        <a href="">
+                        <a href="admin-view-products.html">
                             <li class="py-2">My Account</li>
                         </a>
                     </ul>
@@ -342,7 +414,6 @@
     <script src="all.min.js"></script>
     <script src="bootstrap.min.js"></script>
     <script src="main.js"></script>
-    <script src="admin-products.js"></script>
 </body>
 
 </html>

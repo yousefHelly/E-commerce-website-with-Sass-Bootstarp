@@ -1,0 +1,10 @@
+section.product-section-grid {
+  .products-grid {
+    .product-card {
+      @extend %product-card;
+    }
+  }
+  .pages {
+    @extend %page-switcher;
+  }
+}
