@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="Sass/all.min.css">
     <link rel="stylesheet" href="Sass/scss/bootstrap.css">
     <link rel="stylesheet" href="Sass/style.css">
-    <title>RenoshopBee | Cart</title>
+    <title>RenoshopBee | Checkout</title>
 </head>
 
 <body>
@@ -115,201 +115,150 @@
         </nav>
     </header>
     <!--End Header-->
-    <!--Start cart-->
-    <section class="cart container">
+    <!--Start checkout-content-->
+    <section class="checkout container">
         <!--breadcrumb componant-->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb py-5">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                <li class="breadcrumb-item"><a href="cart.html">Cart</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Checkout</li>
             </ol>
         </nav>
         <!--breadcrumb componant-->
-        <table class="row table table-bordered table-hover m-0">
-            <thead class=" p-0">
-                <tr class="m-0  row align-items-center justify-content-center">
-                    <th class="py-4 col-4  text-center">Products</th>
-                    <th class="py-4 col-2 d-none d-md-block text-center">Color/size</th>
-                    <th class="py-4 col-4 col-md-2 text-center">Quantity</th>
-                    <th class="p-4 col-2 d-none d-md-block text-center">Price</th>
-                    <th class="p-4 col-4 col-md-2 text-center">Total</th>
-                </tr>
-            </thead>
-            <tbody class="p-0">
-                <tr class="m-0 row  justify-content-center">
-                    <td class="d-flex col-4 align-items-center">
-                        <div class="d-flex align-items-center">
-                            <div class="img w-50 d-none d-md-block">
-                                <img class="img-fluid" src="imgs/man7.png" alt="">
+        <div class="checkout-content row py-5 mx-lg-5">
+            <div class="calcuation px-3 p-0 mb-5 row m-0">
+                <div class="border my-4 p-0">
+                    <h5 class="text-uppercase text-center text-md-start px-md-5 py-4 m-0 text-black-50">Your order</h5>
+                    <div class="header d-flex justify-content-between border-bottom mx-2 mx-md-5 py-2">
+                        <div class="product">
+                            Product
+                        </div>
+                        <div class="total">
+                            Total
+                        </div>
+                    </div>
+                    <div class="products mx-2 mx-md-5 py-4 border-bottom ">
+                        <div class="product d-flex justify-content-between align-items-center gap-1 py-2">
+                            <div class="product-name">
+                                Men Plaid Print Corduroy Hooded Shirt Without Top
+                                <span class="q">
+                                    x <span class="quantity">1</span>
+                                </span>
                             </div>
-                            Sporty Sleevlees Gillet
-                        </div>
-                    </td>
-                    <td class="py-4 col-2 d-none d-md-flex align-items-center justify-content-center text-center">
-                        <div class="d-flex flex-column align-items-center">
-                            <p>Size:Xlarge</p>
-                            <p>Color:Black</p>
-                        </div>
-                    </td>
-                    <td class="p-4 col-4 col-md-2 d-flex align-items-center justify-content-center text-center">
-                        <div class="holder p-3">
-                            <div class="q border p-2 d-flex justify-content-center align-items-center">
-                                1
+                            <div class="total">
+                                $109
                             </div>
                         </div>
-                    </td>
-                    <td class="p-4 col-2 d-none d-md-flex justify-content-center align-items-center text-center">
-                        <div class="">$120</div>
-
-                    </td>
-                    <td class="p-4 col-4 col-md-2 d-flex justify-content-center align-items-center text-center">
-                        <div class="d-flex justify-content-around align-items-center gap-4 gap-lg-5">$120
-                            <i class="fas fa-window-close text-danger"></i>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="m-0 row  justify-content-center">
-                    <td class="d-flex col-4 align-items-center">
-                        <div class="d-flex align-items-center">
-                            <div class="img w-50 d-none d-md-block">
-                                <img class="img-fluid" src="imgs/man6.png" alt="">
+                        <div class="product d-flex justify-content-between align-items-center gap-1 py-2">
+                            <div class="product-name">
+                                Men Plaid Print Corduroy Hooded Shirt Without Top
+                                <span class="q">
+                                    x <span class="quantity">2</span>
+                                </span>
                             </div>
-                            Sporty Sleevlees Gillet
-                        </div>
-                    </td>
-                    <td class="py-4 col-2 d-none d-md-flex align-items-center justify-content-center text-center">
-                        <div class="d-flex flex-column align-items-center">
-                            <p>Size:Xlarge</p>
-                            <p>Color:Black</p>
-                        </div>
-                    </td>
-                    <td class="p-4 col-4 col-md-2 d-flex align-items-center justify-content-center text-center">
-                        <div class="holder p-3">
-                            <div class="q border p-2 d-flex justify-content-center align-items-center">
-                                1
+                            <div class="total">
+                                $218
                             </div>
                         </div>
-                    </td>
-                    <td class="p-4 col-2 d-none d-md-flex justify-content-center align-items-center text-center">
-                        <div class="">$120</div>
-                    </td>
-                    <td class="p-4 col-4 col-md-2 d-flex justify-content-center align-items-center text-center">
-                        <div class="d-flex justify-content-around align-items-center gap-4 gap-lg-5">$120
-                            <i class="fas fa-window-close text-danger"></i>
+                    </div>
+                    <div class="subtotal mx-2 mx-md-5 py-4 border-bottom ">
+                        <div class="subtotal d-flex justify-content-between py-2">
+                            <p class="m-0">Subtotal</p>
+                            <span class="subTotal">$327</span>
                         </div>
-                    </td>
-                </tr>
-                <tr class="m-0 row  justify-content-center">
-                    <td class="d-flex col-4 align-items-center">
-                        <div class="d-flex align-items-center">
-                            <div class="img w-50 d-none d-md-block">
-                                <img class="img-fluid" src="imgs/woman8.png" alt="">
-                            </div>
-                            Sporty Sleevlees Gillet
+                        <div class="shipping d-flex justify-content-between py-2">
+                            <p class="m-0">Shipping</p>
+                            <span class="shippingCost">Free Shipping</span>
                         </div>
-                    </td>
-                    <td class="py-4 col-2 d-none d-md-flex align-items-center justify-content-center text-center">
-                        <div class="d-flex flex-column align-items-center">
-                            <p>Size:Xlarge</p>
-                            <p>Color:Black</p>
+                    </div>
+                    <div class="total px-2 px-md-5 py-4 border-bottom">
+                        <div class="total fw-bold d-flex justify-content-between py-2">
+                            <p class="m-0">Total</p>
+                            <span class="total">$327</span>
                         </div>
-                    </td>
-                    <td class="p-4 col-4 col-md-2 d-flex align-items-center justify-content-center text-center">
-                        <div class="holder p-3">
-                            <div class="q border p-2 d-flex justify-content-center align-items-center">
-                                1
-                            </div>
+                    </div>
+                    <div class="payment-method-selection mx-2 mx-md-5 py-4  ">
+                        <div class="paypal d-flex gap-2 align-items-center py-2">
+                            <input onchange="onlyOne(this)" type="checkbox" name="paypal" id="paypal">
+                            <label for="paypal">Paypal</label>
                         </div>
-                    </td>
-                    <td class="p-4 col-2 d-none d-md-flex justify-content-center align-items-center text-center">
-                        <div class="">$120</div>
-                    </td>
-                    <td class="p-4 col-4 col-md-2 d-flex justify-content-center align-items-center text-center">
-                        <div class="d-flex justify-content-around align-items-center gap-4 gap-lg-5">$120
-                            <i class="fas fa-window-close text-danger"></i>
+                        <div class="mastercard d-flex gap-2 align-items-center py-2">
+                            <input onchange="onlyOne(this)" type="checkbox" name="mastercard" id="mastercard">
+                            <label for="mastercard">Mastercard</label>
                         </div>
-                    </td>
-                </tr>
-            </tbody>
-            <tfoot class="p-0">
-                <tr class="m-0 row  justify-content-center">
-                    <td class="d-flex justify-content-center" colspan="5">
-                        <button
-                            class=" btn btn-primary text-light text-uppercase rounded-0 px-3 ms-md-auto me-md-3 my-3">Continue
-                            Shopping</button>
-                    </td>
-                </tr>
-            </tfoot>
-        </table>
-        <div class="other-inputs row py-5">
-            <div class="coupon-code col-md-6 px-3 p-0 mb-5">
-                <h5 class="text-uppercase">Use coupon code</h5>
-                <p class="text-black-50 text-capitalize mb-1">enter your coupon here</p>
-                <div class="coupon-input row m-0">
-                    <input id="couponCode" class="border p-2 col-9 bg-light" type="text" maxlength="10"
-                        placeholder="Enter your coupon here">
-                    <button class="btn btn-primary text-uppercase col-3 text-white rounded-0">apply</button>
+                        <div class="visa d-flex gap-2 align-items-center py-2">
+                            <input onchange="onlyOne(this)" type="checkbox" name="visa" id="visa">
+                            <label for="visa">Visa</label>
+                        </div>
+                        <div class="COD d-flex gap-2 align-items-center py-2">
+                            <input onchange="onlyOne(this)" type="checkbox" name="COD" id="COD">
+                            <label for="COD">Cash on delivery</label>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="voucher-code col-md-6 px-3 p-0 mb-5">
-                <h5 class="text-uppercase">Use gift voucher</h5>
-                <p class="text-black-50 text-capitalize mb-1">enter your gift voucher code here</p>
-                <div class="voucher-input row m-0">
-                    <input id="voucherCode" class="border p-2 col-9 bg-light" type="text" maxlength="10"
-                        placeholder="Enter gift voucher here">
-                    <button class="btn btn-primary text-uppercase col-3 text-white rounded-0">apply</button>
-                </div>
-            </div>
-            <div class="Shipping col-md-6 px-3 p-0 mb-5">
-                <h5 class="text-uppercase">Shipping availability</h5>
-                <div class="Shipping-input row m-0">
-                    <label class="px-0 py-2 text-secondary" for="Country">Select Country</label>
-                    <select id="Country" class="form-select form-select-md rounded-0" name="Country" id="Country">
-                        <option value="EGY">Egypt</option>
-                        <option value="KSA">Saudi Arabia</option>
-                    </select>
-                    <label class="px-0 py-2 text-secondary" for="State">State</label>
-                    <input id="State" class="border p-2 bg-light" type="text" maxlength="15"
-                        placeholder="Enter your State here">
-                    <label class="px-0 py-2 text-secondary" for="PCode">Postal Code</label>
-                    <input id="PCode" class="border p-2 bg-light" type="text" maxlength="8"
-                        placeholder="Enter your Postal Code here">
-                    <button
-                        class=" btn btn-white text-black text-uppercase border col-md-5 rounded-0 px-3 me-auto my-3">Update
-                        Totals</button>
-                </div>
-            </div>
-            <div class="calcuation col-md-6 px-3 p-0 mb-5 row m-0">
-                <h5 class="text-uppercase p-0">Shopping cart calcuation</h5>
-                <table class="table border my-4">
-                    <tbody>
-                        <tr>
-                            <td class="ps-5 p-4 border-0">Subtotal</td>
-                            <td class="text-end pe-5 p-4 border-0">$450</td>
-                        </tr>
-                        <tr>
-                            <td class="ps-5 p-4 border-0">Coupon</td>
-                            <td class="text-end pe-5 p-4 border-0">-$50</td>
-                        </tr>
-                        <tr>
-                            <td class="ps-5 p-4 border-0">Shipping</td>
-                            <td class="text-end pe-5 p-4 border-0">Free Shipping</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr class="border-top">
-                            <td class="ps-5 p-4">Total</td>
-                            <td class="text-end pe-5 p-4">$400</td>
-                        </tr>
-                    </tfoot>
-                </table>
                 <button onclick="window.location.assign(`checkout.html`)"
-                    class="btn btn-primary text-uppercase text-white rounded-0 col-md-5 ms-auto">Proceed to
-                    checkout</button>
+                    class="place-order btn btn-primary text-uppercase text-white rounded-0 col-md-5 ms-auto">Place
+                    Order</button>
+            </div>
+        </div>
+        <div class="orderConfirmation d-none">
+            <div class="alert alert-success d-flex justify-content-start flex-column my-5 py-5 border-0 rounded-0"
+                role="alert">
+                <h4 class="alert-heading">
+                    <i class="fas fa-check-circle"></i> your order has been confirmed successfully!
+                </h4>
+                <p>we have just received your order and we will prepare it as soon as posible. you can track your order
+                    anytime by clicking on the button bellow.</p>
+                <p>thanks for trusting us!</p>
+                <hr>
+                <button onclick="currentLocation()" class="btn btn-outline-primary col-lg-4 align-self-center">Order
+                    Tracking</button>
+                <div class="order-current-location d-none align-items-center justify-content-center my-3">
+                    <iframe class="mw-100"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d912.2717168788863!2d31.313034785070965!3d30.069001277505386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583f42f1fb440f%3A0x1b4fe8f0e1b0d77e!2z2KrZhdin2LMg2YTZhNmF2LnZhNmI2YQ!5e0!3m2!1sar!2seg!4v1670179736124!5m2!1sar!2seg"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
     </section>
-    <!--End cart-->
+    <!--End checkout-content-->
+    <div class="modal fade" id="PaymentMethodModalToggle" aria-hidden="true" data-bs-backdrop="static"
+        aria-labelledby="PaymentMethodModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="PaymentMethodModalToggleLabel">Payment Step</h1>
+                </div>
+                <div class="modal-body">
+                    <form class="row" action="">
+                        <div class="cardNumber mb-3 col-md-6 d-flex flex-column">
+                            <label class="text-black" for="cardNumber">Card number</label>
+                            <input id="cardNumber" maxlength="19" class="border rounded p-2  bg-light w-100"
+                                name="cardNumber" type="text" value="">
+                            <img class="credit-cart-type" src="imgs/credit-card.png" alt="" srcset="">
+                        </div>
+                        <div class="expiryDate mb-3 col-md-6 d-flex flex-column">
+                            <label class="text-black expiryDate" for="expiryDate">Expiry date</label>
+                            <input id="expiryDate" class="border rounded p-2  bg-light w-100" type="month" required>
+                        </div>
+                        <div class="CVC mb-3 col-md-6 d-flex flex-column">
+                            <label class="text-black CVC" for="CVC">CVC</label>
+                            <input id="CVC" class="border rounded p-2  bg-light w-100" type="text" maxlength="4"
+                                required>
+                            <img src="imgs/cvc.png" alt="" srcset="">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+                    <button class="btn btn-primary" data-bs-dismiss="modal"
+                        onclick="showOrderConfirmation()">Pay</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Start Footer-->
     <footer>
         <div class="container footer-social row align-items-center justify-content-center mx-auto">
@@ -415,6 +364,72 @@
     <script src="all.min.js"></script>
     <script src="bootstrap.min.js"></script>
     <script src="main.js"></script>
+    <script>
+        let COD = document.querySelectorAll(`input[type = "checkbox"]`)[3];
+        function onlyOne(checkbox) {
+            let checkboxs = document.querySelectorAll(`input[type = "checkbox"]`);
+            checkboxs.forEach((item) => {
+                if (item != checkbox) {
+                    item.checked = false;
+                }
+                if (COD.checked == true) {
+                    document.querySelector("span.shippingCost").textContent = "$25";
+                    document.querySelector("span.total").textContent = "$349";
+                }
+                else {
+                    document.querySelector("span.shippingCost").textContent = "Free Shipping";
+                    document.querySelector("span.total").textContent = "$327";
+                }
+            })
+        }
+        //open modal 
+        let paymentModal = document.querySelector("#PaymentMethodModalToggle");
+        let button = document.querySelector("button.place-order");
+        button.onclick = function () {
+            if (COD.checked == false) {
+                let modal = new bootstrap.Modal(paymentModal);
+                modal.show();
+            }
+            else {
+                showOrderConfirmation();
+            }
+        }
+        // credit card validation
+        let creditCard = document.querySelector("input#cardNumber");
+        let cardImg = document.querySelector("img.credit-cart-type");
+        creditCard.oninput = function () {
+            creditCard.onkeydown = function (e) {
+                if (e.keyCode == 8) {
+                    creditCard.value.length--;
+                }
+                else {
+                    if (creditCard.value.length == 4 || creditCard.value.length == 9 || creditCard.value.length == 14) {
+                        creditCard.value = creditCard.value + " ";
+                    }
+                }
+                if (/(^(34)|^(37))/.test(creditCard.value)) {
+                    cardImg.src = "imgs/american-express.png";
+                } else if (/^(4)/.test(creditCard.value)) {
+                    cardImg.src = "imgs/visa.png";
+                } else if (/^(5)/.test(creditCard.value)) {
+                    cardImg.src = "imgs/master-card.png";
+                }
+                else {
+                    cardImg.src = "imgs/credit-card.png";
+                }
+            }
+        }
+        //order confirmation page
+        function showOrderConfirmation() {
+            document.querySelector(".checkout-content").classList.add("d-none");
+            document.querySelector(".orderConfirmation").classList.remove("d-none");
+        }
+        //show order-current-location
+        function currentLocation() {
+            document.querySelector(".order-current-location").classList.remove("d-none");
+            document.querySelector(".order-current-location").classList.add("d-flex");
+        }
+    </script>
 </body>
 
 </html>
