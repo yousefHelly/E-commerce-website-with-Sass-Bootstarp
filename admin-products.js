@@ -3,6 +3,9 @@
 function openAddPage(){
     window.location.assign("admin-add-product.html");
 }
+function openSellerAddPage(){
+    window.location.assign("seller-add-product.html");
+}
 
 let delBtns = document.querySelectorAll(".product-card .del");
 delBtns.forEach((btn)=>{
