@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sass/all.min.css">
+    <link rel="stylesheet" href="Sass/scss/bootstrap.css">
+    <link rel="stylesheet" href="Sass/style.css">
+    <title>RenoshopBee | Add Product</title>
+</head>
+
+<body>
+    <!--Start Header-->
+    <header class="bg-black text-white">
+        <!--Social media && contacts Info-->
+        <div class="header-social d-flex flex-column flex-md-row  container-fluid  align-items-center">
+            <div class="info d-none d-sm-flex py-2 gap-5">
+                <div class="phone d-flex align-items-center">
+                    <i class="fas fa-phone"></i>
+                    <span class="phone number ms-3">+1 123 456 789</span>
+                </div>
+                <div class="mail d-flex align-items-center ps-4 border-start">
+                    <i class="far fa-envelope"></i>
+                    <span class="email address ms-3">info@company.com</span>
+                </div>
+            </div>
+            <div class="links d-flex gap-4 align-items-center ms-md-auto ">
+                <a class="text-white" href=""><i class="fab fa-facebook-f facebook"></i></a>
+                <a class="text-white" href=""><i class="fab fab fa-twitter twitter"></i></a>
+                <a class="text-white" href=""><i class="fab fab fa-instagram instagram"></i></a>
+                <a class="text-white" href=""><i class="fab fab fa-linkedin-in linkedin"></i></a>
+                <a class="text-white" href=""><i class="fab fa-github github"></i></a>
+            </div>
+        </div>
+        <!--Social media && contacts Info-->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container-fluid flex-sm-column flex-xl-row">
+                <a class="navbar-brand text-uppercase" href="index.html"><span
+                        class="text-primary fw-bold">RenoShop</span>Bee</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-column flex-md-row" id="collapsibleNavId">
+                    <ul class="navbar-nav  mt-2 mt-lg-0 order-2 order-md-1">
+                        <li class="nav-item py-3 px-2 px-lg-3">
+                            <a class="nav-link text-uppercase fw-bold" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item py-3 px-2 px-lg-3">
+                            <a class="nav-link text-uppercase fw-bold" href="shop-grid-full.html">Women</a>
+                        </li>
+                        <li class="nav-item py-3 px-2 px-lg-3">
+                            <a class="nav-link text-uppercase fw-bold" href="shop-grid-full.html">Men</a>
+                        </li>
+                        <li class="nav-item py-3 px-2 px-lg-3">
+                            <a class="nav-link text-uppercase fw-bold" href="shop-grid-full.html">Kids</a>
+                        </li>
+                        <li class="nav-item py-3 px-2 px-lg-3">
+                            <a class="nav-link text-uppercase fw-bold" href="shop-grid-full.html">Jewellery</a>
+                        </li>
+                        <li class="nav-item py-3 px-2 px-lg-3">
+                            <a class="nav-link text-uppercase fw-bold" href="shop-grid-full.html">Accssories</a>
+                        </li>
+                    </ul>
+                    <div class="others d-flex gap-3 order-1">
+                        <div class="shopping-cart text-black d-flex align-items-center px-2">
+                            <i class="fas fa-shopping-cart button"></i>
+                            <div
+                                class="card-items d-flex align-items-center justify-content-start flex-column bg-light">
+                                <div class="cart-element border-bottom d-flex align-items-center gap-2 p-2 bg-white">
+                                    <div class="el-img col-2">
+                                        <img class="img-fluid" src="imgs/Hooded Shirt 1.webp" alt="">
+                                    </div>
+                                    <div class="el-name">
+                                        Sporty Sleevlees Gillet
+                                    </div>
+                                    <div class="d-flex justify-content-around align-items-center gap-1 ms-1">$120
+                                        <i class="fas fa-window-close text-danger fs-5"></i>
+                                    </div>
+                                </div>
+                                <div class="cart-element border-bottom d-flex align-items-center gap-2 p-2 bg-white">
+                                    <div class="el-img col-2">
+                                        <img class="img-fluid" src="imgs/Hooded Shirt 1.webp" alt="">
+                                    </div>
+                                    <div class="el-name">
+                                        Sporty Sleevlees Gillet
+                                    </div>
+                                    <div class="d-flex justify-content-around align-items-center gap-1 ms-1">$120
+                                        <i class="fas fa-window-close text-danger fs-5"></i>
+                                    </div>
+                                </div>
+                                <button class="view-cart btn btn-primary text-white mt-5">View Cart</button>
+                            </div>
+
+                        </div>
+                        <div class="search-bar text-black d-flex align-items-center px-2">
+                            <i class="fas fa-search"></i>
+                            <div class="search-form d-flex align-items-center justify-content-center">
+                                <input type="search" placeholder="Search">
+                                <button class="btn btn-primary text-white">Search</button>
+                            </div>
+                        </div>
+                        <div class="user-info">
+                            <div
+                                class="min-info d-flex align-items-center justify-content-center gap-2  p-2 rounded-pill">
+                                <div class="img img-fluid">
+                                    <img class="img-fluid" src="imgs/skills-05.png" alt="" srcset="">
+                                </div>
+                                <p class="text-black-50 m-0 text-center d-none d-xl-block">Welcome Back <br><span
+                                        class="userName">Yousef</span> !</p>
+                                <i class="fas fa-chevron-down text-black-50"></i>
+                            </div>
+                            <div class="user-nav">
+                                <ul class="list-unstyled">
+                                    <li onclick="window.location.assign(`seller-my-products.html`)"
+                                        class="p-2 my-2 border-bottom d-flex align-items-center gap-2">
+                                        <i class="far fa-user-circle text-primary"></i>
+                                        View Profile
+                                    </li>
+                                    <li class="p-2 my-2 border-bottom d-flex align-items-center gap-2">
+                                        <i class="fas fa-edit text-primary"></i>
+                                        Edit Settings
+                                    </li>
+                                    <li class="p-2 my-2 d-flex align-items-center gap-2">
+                                        <i class="fas fa-moon text-primary"></i>
+                                        Dark Mode
+                                        <div class="Dark-mode-switcher rounded-pill bg-danger"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--End Header-->
+    <!--Start Dashboard-->
+    <section class="dashboard row m-0">
+        <nav class="dashboard-nav bg-light col-lg-2 container-fluid p-0">
+            <ul class="list-unstyled d-flex justify-content-center align-items-flex-start flex-column">
+                <div class="accordion" id="productAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header d-flex align-items-center rounded-1" id="headingOne">
+                            <button class="accordion-button bg-light " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-shopping-bag me-3"></i>
+                                Products
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#productAccordion">
+                            <div class="accordion-body p-0">
+                                <ul class="products-list list-unstyled text-primary bg-light px-3">
+                                    <li class="py-2 ps-2 "><a class="text-decoration-none text-black-50"
+                                            href="seller-my-products.html">My
+                                            products</a></li>
+                                    <li class="py-2 ps-2 active"><a class="text-decoration-none  active text-primary"
+                                            href="seller-add-product.html">Add/Edit
+                                            products</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <div class="products-content col-lg-10">
+            <div class="header-content d-flex align-items-center justify-content-between p-5 pb-0">
+                <h3>Create Product</h3>
+            </div>
+            <div class="grid-content m-2 m-lg-5 py-2 bg-light rounded">
+                <div class="product-add-form px-5 py-3 row">
+                    <label class="p-0" for="p-t">Product title</label>
+                    <input class="border rounded bg-light py-1 mb-3" type="text" name="product-title" id="p-t">
+                    <label class="p-0" for="p-d">Describtion</label>
+                    <textarea placeholder="Type here" class="border rounded bg-light py-1 mb-3"
+                        name="Product-Describtion" id="p-d"></textarea>
+                    <span class="imgs p-0">Images</span>
+                    <div class="imgs-holder row gap-4 justify-content-center justify-content-md-start">
+                        <div class="img mb-3 col-2 p-0">
+                            <img class="img-fluid p-3 border rounded d-flex flex-column align-items-center h-100 w-100"
+                                src="imgs/product-add.png" alt="">
+                            <div class="expand bg-light rounded-circle justify-content-center align-items-center">
+                                <i class="fas fa-expand text-black-50"></i>
+                            </div>
+                            <div class="del bg-light rounded-circle justify-content-center align-items-center">
+                                <i class="fas fa-trash text-black-50"></i>
+                            </div>
+                        </div>
+                        <div class="img-upload mb-3 col-md-2 p-0">
+                            <input class="mb-3" type="file" accept="image/*" id="p-i" hidden>
+                            <label
+                                class="p-4 border rounded h-100 d-flex flex-column align-items-center justify-content-center text-black-50"
+                                for="p-i"><i class="fas fa-cloud-upload-alt fs-1 text-black-50 mb-2"></i>Upload</label>
+                        </div>
+                    </div>
+                    <label class="p-0" for="">Tags</label>
+                    <div class="product-tags border rounded p-3 mx-0 mb-3 row">
+                        <span class="tag tag-men border rounded ps-2 pe-5 py-1 me-md-1 my-1 col-6 col-md-2">Men</span>
+                        <span
+                            class="tag tag-clothes border rounded ps-2 pe-5 py-1 me-md-1 my-1 col-6 col-md-2">Clothes</span>
+                        <span
+                            class="tag tag-fashion border rounded ps-2 pe-5 py-1 me-md-1 my-1 col-6 col-md-2">Fashion</span>
+                        <input type="text" class="addTag bg-light border-0 col-6 col-md-2">
+                    </div>
+                    <label class="p-0" for="p-c">Category</label>
+                    <select class="border bg-light px-3 py-2 col-md-2 mb-3 rounded text-black-50" name="category"
+                        id="p-c">
+                        <option value="Women">Women</option>
+                        <option value="Men">Men</option>
+                        <option value="Kids">Kids</option>
+                        <option value="Jewellery">Jewellery</option>
+                        <option value="Accssories">Accssories</option>
+                    </select>
+                    <label class="p-0" for="p-p">Price</label>
+                    <input class="border rounded bg-light py-1 mb-md-3 col-8 col-md-2" type="text"
+                        placeholder="Type here" name="product-title" id="p-p">
+                    <select class="border bg-light px-3 py-2 col-4 col-md-2 mb-md-3 rounded ms-md-2 text-black-50"
+                        name="Currency" id="p-c">
+                        <option value="usd">USD</option>
+                        <option value="egp">EGP</option>
+                        <option value="sar">SAR</option>
+                        <option value="cad">CAD</option>
+                    </select>
+                    <div class="check-box my-3 p-0">
+                        <input type="checkbox" id="publish-on-site" name="publish-site">
+                        <label for="publish-on-site">Publish on site</label>
+                    </div>
+                    <button class="btn btn-primary text-white col-md-2 py-2">Submit item</button>
+                </div>
+                <div class="expanded-img">
+                    <img src="imgs/offer-2.jpg">
+                    <span class="img-description">lablaba</span>
+                    <div class="close">
+                        <i class="far fa-window-close"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--End Dashboard-->
+    <!--Start Footer-->
+    <footer class="">
+        <div class="container footer-social row align-items-center justify-content-center mx-auto">
+            <p class="col-md-6 col-lg-9 py-3 m-0 border-bottom border-md-0 text-center text-md-start">we are confident
+                we have provided all the
+                best for you. Stay connect with
+                us</p>
+            <div class="links col-md-6 col-lg-3 d-flex gap-4 align-items-center py-3 
+            border-start border-end">
+                <a class="text-secondary" href=""><i class="fab fa-facebook-f facebook"></i></a>
+                <a class="text-secondary" href=""><i class="fab fab fa-twitter twitter"></i></a>
+                <a class="text-secondary" href=""><i class="fab fab fa-instagram instagram"></i></a>
+                <a class="text-secondary" href=""><i class="fab fab fa-linkedin-in linkedin"></i></a>
+                <a class="text-secondary" href=""><i class="fab fa-github github"></i></a>
+            </div>
+        </div>
+        <div class="footer-nav border-top m-0 pb-5 pt-3">
+            <div class="container row mx-auto">
+                <div class="info col-md-6 col-lg-3">
+                    <h4 class="header text-uppercase pt-5 pb-3">Information</h4>
+                    <ul class="list-unstyled">
+                        <a href="">
+                            <li class="py-2">Delivery Information</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">Discount</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">Sitemap</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">Privacy Policy</li>
+                        </a>
+                        <a href="admin-view-products.html">
+                            <li class="py-2">My Account</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="my-account col-md-6 col-lg-3">
+                    <h4 class="header text-uppercase pt-5 pb-3">My Account</h4>
+                    <ul class="list-unstyled">
+                        <a href="login.html">
+                            <li class="py-2">Sign In</li>
+                        </a>
+                        <a href="cart.html">
+                            <li class="py-2">View Cart</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">My Wishlist</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">Check Out</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">Track My Order</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="help col-md-6 col-lg-3">
+                    <h4 class="header text-uppercase pt-5 pb-3">Help</h4>
+                    <ul class="list-unstyled">
+                        <a href="">
+                            <li class="py-2">F.A.Q</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">Shipping</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">Contact Us</li>
+                        </a>
+                        <a href="">
+                            <li class="py-2">Privacy Policy</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="contact col-md-6 col-lg-3">
+                    <h4 class="header text-uppercase pt-5 pb-3">Contact Info</h4>
+                    <ul class="list-unstyled">
+                        <a class="d-flex align-items-center gap-2" href="">
+                            <i class="fas fa-globe-africa"></i>
+                            <li class="py-2">1234 Giza,Egypt</li>
+                        </a>
+                        <a class="d-flex align-items-center gap-2" href="">
+                            <i class="fas fa-phone"></i>
+                            <li class="py-2">+1 234 5678 9999</li>
+                        </a>
+                        <a class="d-flex align-items-center gap-2" href="mailto:yousef.helly@gmail.com">
+                            <i class="far fa-envelope"></i>
+                            <li class="py-2 text-primary">yousef.helly@gmail.com</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy-rights bg-black">
+            <p class="container mx-auto text-white-50 m-0 py-3 px-0">&copy;copyright 2022 RenoshopBee all right
+                reserved -
+                Design By
+                RenoshopBee</p>
+        </div>
+    </footer>
+    <!--End Footer-->
+    <script src="all.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <script src="admin-products.js"></script>
+</body>
+
+</html>

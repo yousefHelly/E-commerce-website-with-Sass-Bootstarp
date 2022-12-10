@@ -3,14 +3,15 @@
   color: black;
 }
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
   border-radius: 50px;
 }
 ::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color: #3cb8784a;
+  border-radius: 50px;
 }
 * {
   &:focus-within {

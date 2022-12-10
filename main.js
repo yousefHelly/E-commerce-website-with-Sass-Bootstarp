@@ -1,12 +1,12 @@
 setTimeout(() => {
     let cartButton = document.querySelector(".svg-inline--fa.fa-cart-shopping.button");
-    let closeButton = document.querySelector(" .card-items .close");
+    let openCartPageButton = document.querySelector(" .card-items .view-cart");
     cartButton.onclick = function(){
         document.querySelector(".user-nav").classList.remove("show");
         document.querySelector(".search-form").classList.remove("show");
         document.querySelector(".card-items").classList.toggle("show");
-        closeButton.onclick = function(){
-            document.querySelector(".card-items").classList.remove("show");
+        openCartPageButton.onclick = function(){
+            window.location.assign("cart.html")
         } 
     }
     let searchButton = document.querySelector(".search-bar svg");
@@ -53,3 +53,24 @@ productsNames.forEach((product)=>{
         window.location.assign("product-details.html");
     }
 })
+
+//scroll to top button
+let stpBtn = document.createElement("button");
+        stpBtn.classList.add("btn","btn-outline-primary","position-fixed","bottom-0","end-0","me-3","mb-3","fs-5","d-none");
+        stpBtn.innerHTML = `<i class="fas fas fa-chevron-circle-up"></i>`;
+        stpBtn.onclick = function(){
+            window.scrollTo({
+                top:0,
+                left:0,
+                behavior:"smooth"
+            })
+        }
+        document.body.appendChild(stpBtn);
+window.onscroll = function(){
+    if (scrollY>=700){
+        stpBtn.classList.remove("d-none");
+    }
+    else{
+        stpBtn.classList.add("d-none");
+    }
+}

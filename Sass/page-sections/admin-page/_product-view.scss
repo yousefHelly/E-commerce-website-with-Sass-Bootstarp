@@ -9,7 +9,8 @@ section.dashboard {
     h2.active {
       background-color: var(--main-hv-color);
     }
-    .products-list {
+    .products-list,
+    .sellers-list {
       a.active {
         color: var(--main-color) !important;
       }
@@ -22,8 +23,10 @@ section.dashboard {
       }
     }
   }
-  .products-content {
-    .product-search {
+  .products-content,
+  .sellers-content {
+    .product-search,
+    .seller-search {
       .filters {
         div {
           cursor: pointer;
@@ -154,5 +157,37 @@ section.dashboard {
     top: 25px;
     font-size: 2rem;
     cursor: pointer;
+  }
+}
+//view seller
+.sellers-grid {
+  .seller-content {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      background-image: url(../../../imgs/offer-2.jpg);
+      height: 100px;
+      background-size: cover;
+      z-index: 0;
+      top: 0px;
+      @extend %centerX;
+      border-top-left-radius: 0.375rem;
+      border-top-right-radius: 0.375rem;
+    }
+    .seller-img {
+      position: relative;
+    }
+  }
+}
+//request seller
+.sellers-requests-grid {
+  .request {
+    .requested-product {
+      .porduct-info {
+        @extend %product-card;
+      }
+    }
   }
 }

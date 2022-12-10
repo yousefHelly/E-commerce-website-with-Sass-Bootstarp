@@ -68,11 +68,33 @@
                     <div class="others d-flex gap-3 order-1">
                         <div class="shopping-cart text-black d-flex align-items-center px-2">
                             <i class="fas fa-shopping-cart button"></i>
-                            <div class="card-items d-flex align-items-center justify-content-center flex-column">
-                                <i class="fas fa-exclamation text-primary p-5 pb-2"></i>
-                                <p class="text-capitalize pb-5">your cart is empty</p>
-                                <button class="close btn btn-primary text-white">Continue Shopping</button>
+                            <div
+                                class="card-items d-flex align-items-center justify-content-start flex-column bg-light">
+                                <div class="cart-element border-bottom d-flex align-items-center gap-2 p-2 bg-white">
+                                    <div class="el-img col-2">
+                                        <img class="img-fluid" src="imgs/Hooded Shirt 1.webp" alt="">
+                                    </div>
+                                    <div class="el-name">
+                                        Sporty Sleevlees Gillet
+                                    </div>
+                                    <div class="d-flex justify-content-around align-items-center gap-1 ms-1">$120
+                                        <i class="fas fa-window-close text-danger fs-5"></i>
+                                    </div>
+                                </div>
+                                <div class="cart-element border-bottom d-flex align-items-center gap-2 p-2 bg-white">
+                                    <div class="el-img col-2">
+                                        <img class="img-fluid" src="imgs/Hooded Shirt 1.webp" alt="">
+                                    </div>
+                                    <div class="el-name">
+                                        Sporty Sleevlees Gillet
+                                    </div>
+                                    <div class="d-flex justify-content-around align-items-center gap-1 ms-1">$120
+                                        <i class="fas fa-window-close text-danger fs-5"></i>
+                                    </div>
+                                </div>
+                                <button class="view-cart btn btn-primary text-white mt-5">View Cart</button>
                             </div>
+
                         </div>
                         <div class="search-bar text-black d-flex align-items-center px-2">
                             <i class="fas fa-search"></i>
@@ -88,12 +110,13 @@
                                     <img class="img-fluid" src="imgs/skills-05.png" alt="" srcset="">
                                 </div>
                                 <p class="text-black-50 m-0 text-center d-none d-xl-block">Welcome Back <br><span
-                                        class="userName">Admin</span> !</p>
+                                        class="userName">Yousef</span> !</p>
                                 <i class="fas fa-chevron-down text-black-50"></i>
                             </div>
                             <div class="user-nav">
                                 <ul class="list-unstyled">
-                                    <li class="p-2 my-2 border-bottom d-flex align-items-center gap-2">
+                                    <li onclick="window.location.assign(`admin-view-products.html`)"
+                                        class="p-2 my-2 border-bottom d-flex align-items-center gap-2">
                                         <i class="far fa-user-circle text-primary"></i>
                                         View Profile
                                     </li>
@@ -123,36 +146,49 @@
                     <i class="far fa-chart-bar me-3"></i>
                     Dashboard
                 </li>
-                <div class="accordion" id="accordionExample">
+                <div class="accordion" id="productAccordion">
                     <div class="accordion-item">
-                        <h2 class="accordion-header active d-flex align-items-center rounded-1" id="headingOne">
-                            <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse"
+                        <h2 class="accordion-header d-flex align-items-center rounded-1" id="headingOne">
+                            <button class="accordion-button bg-light " type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <svg class="svg-inline--fa fa-bag-shopping me-3" aria-hidden="true" focusable="false"
-                                    data-prefix="fas" data-icon="bag-shopping" role="img"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
-                                    <path fill="currentColor"
-                                        d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 96c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24zm200-24c0 13.3-10.7 24-24 24s-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24z">
-                                    </path>
-                                </svg><!-- <i class="fas fa-shopping-bag me-3"></i> Font Awesome fontawesome.com -->
+                                <i class="fas fa-shopping-bag me-3"></i>
                                 Products
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
+                            data-bs-parent="#productAccordion">
                             <div class="accordion-body p-0">
-
-                                <ul class="products-list list-unstyled text-black-50 bg-light px-3">
-                                    <li class="py-2 ps-2 active"><a class="text-decoration-none active text-black-50"
-                                            href="#">View
+                                <ul class="products-list list-unstyled text-primary bg-light px-3">
+                                    <li class="py-2 ps-2 active"><a class="text-decoration-none active text-primary"
+                                            href="admin-view-products.html">View
                                             products</a></li>
                                     <li class="py-2 ps-2"><a class="text-decoration-none text-black-50"
                                             href="admin-add-product.html">Add/Edit
                                             products</a></li>
-                                    <li class="py-2 ps-2"><a class="text-decoration-none text-black-50"
-                                            href="#">Categories</a></li>
-                                    <li class="py-2 ps-2"><a class="text-decoration-none text-black-50"
-                                            href="#">Brands</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="Selleraccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header d-flex align-items-center rounded-1" id="headingOne">
+                            <button class="accordion-button bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                <i class="fas fas fa-network-wired me-3"></i>
+                                Sellers
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#Selleraccordion">
+                            <div class="accordion-body p-0">
+                                <ul class="sellers-list list-unstyled text-black-50 bg-light px-3">
+                                    <li class="py-2 ps-2 "><a class="text-decoration-none text-black-50 "
+                                            href="admin-view-sellers.html">View
+                                            sellers</a></li>
+                                    <li class="py-2 ps-2 "><a class="text-decoration-none  text-black-50"
+                                            href="admin-seller-requests.html">Sellers
+                                            requests</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -504,7 +540,7 @@
                         <a href="">
                             <li class="py-2">Privacy Policy</li>
                         </a>
-                        <a href="">
+                        <a href="admin-view-products.html">
                             <li class="py-2">My Account</li>
                         </a>
                     </ul>
